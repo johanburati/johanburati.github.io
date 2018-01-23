@@ -6,10 +6,30 @@
     <description>Recent content on johanburati&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 23 Jan 2018 11:57:00 +0900</lastBuildDate>
+    <lastBuildDate>Tue, 23 Jan 2018 14:24:11 +0900</lastBuildDate>
     
 	<atom:link href="https://johanburati.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Encrypted Vm Yum Update</title>
+      <link>https://johanburati.github.io/2018/01/encrypted-vm-yum-update/</link>
+      <pubDate>Tue, 23 Jan 2018 14:24:11 +0900</pubDate>
+      
+      <guid>https://johanburati.github.io/2018/01/encrypted-vm-yum-update/</guid>
+      <description>After running &amp;ldquo;yum update&amp;rdquo; on a encrypted VM run yumupdatefix.sh to rebuild the initramfs with the patched version of the Dracut module. If you do not do that your VM will not be able to boot.</description>
+    </item>
+    
+    <item>
+      <title>Mount Blobs With Dysk</title>
+      <link>https://johanburati.github.io/2018/01/mount-blobs-with-dysk/</link>
+      <pubDate>Tue, 23 Jan 2018 12:58:38 +0900</pubDate>
+      
+      <guid>https://johanburati.github.io/2018/01/mount-blobs-with-dysk/</guid>
+      <description>With dysk you can create disks and attach disks quickly on your VM using storage blobs.
+curl https://raw.githubusercontent.com/johanburati/bin/master/dysk.ko.$(uname -r) -o dysk.ko
+sudo cp dysk.4.13.0-17-generic.ko /lib/modules/$(uname -r)/kernel/drivers/misc/dysk.ko</description>
+    </item>
     
     <item>
       <title>About</title>
