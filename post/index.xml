@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on johanburati&#39;s site</title>
+    <title>Posts on johanburati&#39;s blog</title>
     <link>https://johanburati.github.io/post/</link>
-    <description>Recent content in Posts on johanburati&#39;s site</description>
+    <description>Recent content in Posts on johanburati&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 23 Jan 2018 11:16:04 +0900</lastBuildDate>
@@ -13,20 +13,20 @@
     
     <item>
       <title>Redhat Recommendations for Azure</title>
-      <link>https://johanburati.github.io/post/redhat-recommendations-for-azure/</link>
+      <link>https://johanburati.github.io/2018/01/redhat-recommendations-for-azure/</link>
       <pubDate>Tue, 23 Jan 2018 11:16:04 +0900</pubDate>
       
-      <guid>https://johanburati.github.io/post/redhat-recommendations-for-azure/</guid>
+      <guid>https://johanburati.github.io/2018/01/redhat-recommendations-for-azure/</guid>
       <description>The following are recommendation from Redhat for VMs running in Microsoft Azure.
    Option Recommendation     LVM Do not use Logical Volume Manager (LVM) on the operating system disk. Use regular partitions and format the disk using ext3, ext4, or xfs. LVM or RAID can be used for data disks.   ssh ssh must be enabled to provide remote access to your Azure VMs.   dhcp The primary virtual adapter should be configured for dhcp (IPv4 only).</description>
     </item>
     
     <item>
       <title>First Post</title>
-      <link>https://johanburati.github.io/post/first-post/</link>
+      <link>https://johanburati.github.io/2018/01/first-post/</link>
       <pubDate>Tue, 23 Jan 2018 10:02:02 +0900</pubDate>
       
-      <guid>https://johanburati.github.io/post/first-post/</guid>
+      <guid>https://johanburati.github.io/2018/01/first-post/</guid>
       <description>Hello World !</description>
     </item>
     

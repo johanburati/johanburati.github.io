@@ -3,13 +3,18 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://johanburati.github.io/post/redhat-recommendations-for-azure/</loc>
+    <loc>https://johanburati.github.io/2018/01/redhat-recommendations-for-azure/</loc>
     <lastmod>2018-01-23T11:16:04+09:00</lastmod>
   </url>
   
   <url>
-    <loc>https://johanburati.github.io/post/first-post/</loc>
+    <loc>https://johanburati.github.io/2018/01/first-post/</loc>
     <lastmod>2018-01-23T10:02:02+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://johanburati.github.io/blogs/</loc>
+    <priority>0</priority>
   </url>
   
   <url>

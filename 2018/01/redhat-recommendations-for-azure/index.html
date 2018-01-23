@@ -1,5 +1,9 @@
 
 
+  
+    
+  
+
 
   
 
@@ -16,25 +20,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="generator" content="Hugo 0.32.2 with theme Tranquilpeak 0.4.3-BETA">
-    <title>Posts</title>
+    <title>Redhat Recommendations for Azure</title>
     <meta name="author" content="johanburati&#39;s blog">
     <meta name="keywords" content="">
 
     <link rel="icon" href="https://johanburati.github.io/favicon.png">
     
-      <link rel="alternate" type="application/rss+xml" title="RSS" href="https://johanburati.github.io/post/index.xml">
-    
 
     
-    <meta name="description" content="johanburati&#39;s blogs on linux, azure and more">
-    <meta property="og:description" content="johanburati&#39;s blogs on linux, azure and more">
+    <meta name="description" content="The following are recommendation from Redhat for VMs running in Microsoft Azure.
+   Option Recommendation     LVM Do not use Logical Volume Manager (LVM) on the operating system disk. Use regular partitions and format the disk using ext3, ext4, or xfs. LVM or RAID can be used for data disks.   ssh ssh must be enabled to provide remote access to your Azure VMs.   dhcp The primary virtual adapter should be configured for dhcp (IPv4 only).">
+    <meta property="og:description" content="The following are recommendation from Redhat for VMs running in Microsoft Azure.
+   Option Recommendation     LVM Do not use Logical Volume Manager (LVM) on the operating system disk. Use regular partitions and format the disk using ext3, ext4, or xfs. LVM or RAID can be used for data disks.   ssh ssh must be enabled to provide remote access to your Azure VMs.   dhcp The primary virtual adapter should be configured for dhcp (IPv4 only).">
     <meta property="og:type" content="blog">
-    <meta property="og:title" content="Posts">
-    <meta property="og:url" content="/post/">
+    <meta property="og:title" content="Redhat Recommendations for Azure">
+    <meta property="og:url" content="/2018/01/redhat-recommendations-for-azure/">
     <meta property="og:site_name" content="johanburati&#39;s blog">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="johanburati&#39;s blog">
-    <meta name="twitter:description" content="johanburati&#39;s blogs on linux, azure and more">
+    <meta name="twitter:description" content="The following are recommendation from Redhat for VMs running in Microsoft Azure.
+   Option Recommendation     LVM Do not use Logical Volume Manager (LVM) on the operating system disk. Use regular partitions and format the disk using ext3, ext4, or xfs. LVM or RAID can be used for data disks.   ssh ssh must be enabled to provide remote access to your Azure VMs.   dhcp The primary virtual adapter should be configured for dhcp (IPv4 only).">
     
     
 
@@ -195,23 +200,16 @@
         class="
                hasCoverMetaIn
                ">
-        <section class="postShorten-group main-content-wrap">
+        <article class="post" itemscope itemType="http://schema.org/BlogPosting">
           
           
-            
-
+            <div class="post-header main-content-wrap text-left">
   
-
-<article class="postShorten postShorten--thumbnailimg-left" itemscope itemType="http://schema.org/BlogPosting">
-  <div class="postShorten-wrap">
-    
-    <div class="postShorten-header">
-      <h1 class="postShorten-title" itemprop="headline">
-        <a class="link-unstyled" href="https://johanburati.github.io/2018/01/redhat-recommendations-for-azure/">
-          Redhat Recommendations for Azure
-        </a>
-      </h1>
-      
+    <h1 class="post-title" itemprop="headline">
+      Redhat Recommendations for Azure
+    </h1>
+  
+  
   <div class="postShorten-meta post-meta">
     
       <time itemprop="datePublished" datetime="2018-01-23T11:16:04&#43;09:00">
@@ -223,61 +221,117 @@
     
   </div>
 
-    </div>
-    <div class="postShorten-excerpt" itemprop="articleBody">
-      The following are recommendation from Redhat for VMs running in Microsoft Azure.
-   Option Recommendation     LVM Do not use Logical Volume Manager (LVM) on the operating system disk. Use regular partitions and format the disk using ext3, ext4, or xfs. LVM or RAID can be used for data disks.   ssh ssh must be enabled to provide remote access to your Azure VMs.   dhcp The primary virtual adapter should be configured for dhcp (IPv4 only).
-      <p>
-        <a href="https://johanburati.github.io/2018/01/redhat-recommendations-for-azure/" class="postShorten-excerpt_link link">Continue reading</a>
-        
-      </p>
-    </div>
-  </div>
-  
-</article>
-
+</div>
           
+          <div class="post-content markdown" itemprop="articleBody">
+            <div class="main-content-wrap">
+              <p>The following are recommendation from Redhat for VMs running in Microsoft Azure.</p>
+
+<table>
+<thead>
+<tr>
+<th>Option</th>
+<th>Recommendation</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><em>LVM</em></td>
+<td>Do not use Logical Volume Manager (LVM) on the operating system disk. Use regular partitions and format the disk using ext3, ext4, or xfs. LVM or RAID can be used for data disks.</td>
+</tr>
+
+<tr>
+<td><em>ssh</em></td>
+<td>ssh must be enabled to provide remote access to your Azure VMs.</td>
+</tr>
+
+<tr>
+<td><em>dhcp</em></td>
+<td>The primary virtual adapter should be configured for dhcp (IPv4 only).</td>
+</tr>
+
+<tr>
+<td><em>Network</em></td>
+<td>Manager This service should be disabled on RHEL 6.x images.</td>
+</tr>
+
+<tr>
+<td><em>Swap Space</em></td>
+<td>Do not create a dedicated swap file or swap partition. Swap space may be configured in the Azure Linux agent.</td>
+</tr>
+
+<tr>
+<td><em>NIC Choose</em></td>
+<td>virtio device for the primary virtual network adapter.</td>
+</tr>
+
+<tr>
+<td><em>encryption</em></td>
+<td>Do not use full disk encryption for the operating system disk. Data disks can be encrypted.</td>
+</tr>
+</tbody>
+</table>
+
+<p>ref: <a href="https://access.redhat.com/articles/product-configuration-for-azure">https://access.redhat.com/articles/product-configuration-for-azure</a></p>
+
+              
+            </div>
+          </div>
+          <div id="post-footer" class="post-footer main-content-wrap">
             
-
-  
-
-<article class="postShorten postShorten--thumbnailimg-left" itemscope itemType="http://schema.org/BlogPosting">
-  <div class="postShorten-wrap">
-    
-    <div class="postShorten-header">
-      <h1 class="postShorten-title" itemprop="headline">
-        <a class="link-unstyled" href="https://johanburati.github.io/2018/01/first-post/">
-          First Post
-        </a>
-      </h1>
+              
+            
+            
+  <div class="post-actions-wrap">
+      <nav >
+        <ul class="post-actions post-action-nav">
+          
+            <li class="post-action">
+              
+                <a class="post-action-btn btn btn--disabled">
+              
+                  <i class="fa fa-angle-left"></i>
+                  <span class="hide-xs hide-sm text-small icon-ml">NEXT</span>
+                </a>
+            </li>
+            <li class="post-action">
+              
+                <a class="post-action-btn btn btn--default tooltip--top" href="https://johanburati.github.io/2018/01/first-post/" data-tooltip="First Post">
+              
+                  <span class="hide-xs hide-sm text-small icon-mr">PREVIOUS</span>
+                  <i class="fa fa-angle-right"></i>
+                </a>
+            </li>
+          
+        </ul>
+      </nav>
+    <ul class="post-actions post-action-share" >
       
-  <div class="postShorten-meta post-meta">
-    
-      <time itemprop="datePublished" datetime="2018-01-23T10:02:02&#43;09:00">
+        <li class="post-action hide-lg hide-md hide-sm">
+          <a class="post-action-btn btn btn--default btn-open-shareoptions" href="#btn-open-shareoptions">
+            <i class="fa fa-share-alt"></i>
+          </a>
+        </li>
         
-  January 23, 2018
-
-      </time>
-    
-    
+      
+      
+      <li class="post-action">
+        
+          <a class="post-action-btn btn btn--default" href="#">
+        
+          <i class="fa fa-list"></i>
+        </a>
+      </li>
+    </ul>
   </div>
 
-    </div>
-    <div class="postShorten-excerpt" itemprop="articleBody">
-      Hello World !
-      <p>
-        <a href="https://johanburati.github.io/2018/01/first-post/" class="postShorten-excerpt_link link">Continue reading</a>
-        
-      </p>
-    </div>
-  </div>
-  
-</article>
 
-          
-          
-
-        </section>
+            
+              
+            
+          </div>
+        </article>
         <footer id="footer" class="main-content-wrap">
   <span class="copyrights">
     &copy; 2018 johanburati. All Rights Reserved
@@ -285,6 +339,60 @@
 </footer>
 
       </div>
+      <div id="bottom-bar" class="post-bottom-bar" data-behavior="1">
+        
+  <div class="post-actions-wrap">
+      <nav >
+        <ul class="post-actions post-action-nav">
+          
+            <li class="post-action">
+              
+                <a class="post-action-btn btn btn--disabled">
+              
+                  <i class="fa fa-angle-left"></i>
+                  <span class="hide-xs hide-sm text-small icon-ml">NEXT</span>
+                </a>
+            </li>
+            <li class="post-action">
+              
+                <a class="post-action-btn btn btn--default tooltip--top" href="https://johanburati.github.io/2018/01/first-post/" data-tooltip="First Post">
+              
+                  <span class="hide-xs hide-sm text-small icon-mr">PREVIOUS</span>
+                  <i class="fa fa-angle-right"></i>
+                </a>
+            </li>
+          
+        </ul>
+      </nav>
+    <ul class="post-actions post-action-share" >
+      
+        <li class="post-action hide-lg hide-md hide-sm">
+          <a class="post-action-btn btn btn--default btn-open-shareoptions" href="#btn-open-shareoptions">
+            <i class="fa fa-share-alt"></i>
+          </a>
+        </li>
+        
+      
+      
+      <li class="post-action">
+        
+          <a class="post-action-btn btn btn--default" href="#">
+        
+          <i class="fa fa-list"></i>
+        </a>
+      </li>
+    </ul>
+  </div>
+
+
+      </div>
+      <div id="share-options-bar" class="share-options-bar" data-behavior="1">
+  <i id="btn-close-shareoptions" class="fa fa-close"></i>
+  <ul class="share-options">
+    
+  </ul>
+</div>
+<div id="share-options-mask" class="share-options-mask"></div>
     </div>
     
     <div id="about">
@@ -385,6 +493,10 @@
 
 
 
+
+  
+    
+  
 
 
 

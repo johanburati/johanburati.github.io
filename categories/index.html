@@ -8,6 +8,8 @@
 
 
 
+  
+
 <!DOCTYPE html>
 <html lang="en-us">
   <head>
@@ -16,7 +18,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="generator" content="Hugo 0.32.2 with theme Tranquilpeak 0.4.3-BETA">
     <title>Categories</title>
-    <meta name="author" content="">
+    <meta name="author" content="johanburati&#39;s blog">
     <meta name="keywords" content="">
 
     <link rel="icon" href="https://johanburati.github.io/favicon.png">
@@ -25,21 +27,23 @@
     
 
     
-    <meta name="description" content="">
-    <meta property="og:description" content="">
+    <meta name="description" content="johanburati&#39;s blogs on linux, azure and more">
+    <meta property="og:description" content="johanburati&#39;s blogs on linux, azure and more">
     <meta property="og:type" content="blog">
     <meta property="og:title" content="Categories">
     <meta property="og:url" content="/categories/">
-    <meta property="og:site_name" content="johanburati&#39;s site">
+    <meta property="og:site_name" content="johanburati&#39;s blog">
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="johanburati&#39;s site">
-    <meta name="twitter:description" content="">
+    <meta name="twitter:title" content="johanburati&#39;s blog">
+    <meta name="twitter:description" content="johanburati&#39;s blogs on linux, azure and more">
     
     
 
     
     
 
+    
+      <meta property="og:image" content="https://johanburati.github.io/images/pi.png">
     
 
     
@@ -57,6 +61,10 @@
     <link rel="stylesheet" href="https://johanburati.github.io/css/style-jsjn0006wyhpyzivf6yceb31gvpjatbcs3qzjvlumobfnugccvobqwxnnaj8.min.css" />
     
     
+      
+        <link rel="stylesheet" href="https://johanburati.github.io/css/custom.css">
+      
+    
 
     
       
@@ -66,16 +74,36 @@
 
   <body>
     <div id="blog">
-      <header id="header" data-behavior="">
+      <header id="header" data-behavior="1">
   <i id="btn-open-sidebar" class="fa fa-lg fa-bars"></i>
   <div class="header-title">
-    <a class="header-title-link" href="https://johanburati.github.io/">johanburati&#39;s site</a>
+    <a class="header-title-link" href="https://johanburati.github.io/">johanburati&#39;s blog</a>
   </div>
+  
+    
+      <a class="header-right-picture "
+         href="https://johanburati.github.io/#about">
+    
+    
+    
+      
+        <img class="header-picture" src="https://johanburati.github.io/images/pi.png" alt="Author&#39;s picture" />
+      
+    
+    </a>
   
 </header>
 
-      <nav id="sidebar" data-behavior="">
+      <nav id="sidebar" data-behavior="1">
   <div class="sidebar-container">
+    
+      <div class="sidebar-profile">
+        <a href="https://johanburati.github.io/#about">
+          <img class="sidebar-profile-picture" src="https://johanburati.github.io/images/pi.png" alt="Author&#39;s picture" />
+        </a>
+        <h4 class="sidebar-profile-name">johanburati&#39;s blog</h4>
+        
+      </div>
     
     <ul class="sidebar-buttons">
       
@@ -83,7 +111,7 @@
     
       <a class="sidebar-button-link " href="https://johanburati.github.io/">
     
-      
+      <i class="sidebar-button-icon fa fa-lg fa-home"></i>
       
       <span class="sidebar-button-desc">Home</span>
     </a>
@@ -93,7 +121,7 @@
     
       <a class="sidebar-button-link " href="https://johanburati.github.io/about">
     
-      
+      <i class="sidebar-button-icon fa fa-lg fa-question"></i>
       
       <span class="sidebar-button-desc">About</span>
     </a>
@@ -103,9 +131,29 @@
     
       <a class="sidebar-button-link " href="https://johanburati.github.io/blogs">
     
-      
+      <i class="sidebar-button-icon fa fa-lg fa-edit"></i>
       
       <span class="sidebar-button-desc">Blogs</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://johanburati.github.io/categories">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-bookmark"></i>
+      
+      <span class="sidebar-button-desc">Categories</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://johanburati.github.io/tags">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-tags"></i>
+      
+      <span class="sidebar-button-desc">Tags</span>
     </a>
   </li>
 
@@ -113,6 +161,26 @@
     </ul>
     <ul class="sidebar-buttons">
       
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://johanburati.github.io/index.xml">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-rss"></i>
+      
+      <span class="sidebar-button-desc">RSS</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://github.com/yixuan/" target="_blank" rel="noopener">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-github"></i>
+      
+      <span class="sidebar-button-desc">GitHub</span>
+    </a>
+  </li>
+
 
     </ul>
     <ul class="sidebar-buttons">
@@ -124,7 +192,7 @@
 
       
 
-      <div id="main" data-behavior=""
+      <div id="main" data-behavior="1"
         class="
                hasCoverMetaIn
                ">
@@ -132,12 +200,12 @@
         <div id="categories-archives" class="main-content-wrap">
           <form id="filter-form" action="##">
             <input name="category" type="text" class="form-control input--xlarge"
-                   placeholder="" autofocus="autofocus">
+                   placeholder="Search category" autofocus="autofocus">
           </form>
           <h5 class="archive-result text-color-base text-xlarge"
-              data-message-zero=""
-              data-message-one=""
-              data-message-other=""></h5>
+              data-message-zero="no category found"
+              data-message-one="1 cartegory found"
+              data-message-other="{n} categories found"></h5>
           <section class="boxes">
             
               
@@ -151,7 +219,7 @@
         </div>
         <footer id="footer" class="main-content-wrap">
   <span class="copyrights">
-    &copy; 2018 johanburati&#39;s site. 
+    &copy; 2018 johanburati. All Rights Reserved
   </span>
 </footer>
 
@@ -163,7 +231,9 @@
       <i class="fa fa-remove"></i>
     </div>
     
-    <h4 id="about-card-name"></h4>
+      <img id="about-card-picture" src="https://johanburati.github.io/images/pi.png" alt="Author&#39;s picture" />
+    
+    <h4 id="about-card-name">johanburati&#39;s blog</h4>
     
     
     
@@ -171,6 +241,11 @@
 </div>
 
     
+  
+    
+    <div id="cover" style="background-image:url('http://cloudcompute.academy/wp-content/uploads/2015/09/banner-2.jpg');"></div>
+  
+
 
   </body>
   
