@@ -3,28 +3,8 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://johanburati.github.io/2018/01/encrypted-vm-yum-update/</loc>
-    <lastmod>2018-01-23T14:24:11+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://johanburati.github.io/2018/01/mount-blobs-with-dysk/</loc>
-    <lastmod>2018-01-23T12:58:38+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://johanburati.github.io/about/</loc>
-    <lastmod>2018-01-23T11:57:00+09:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://johanburati.github.io/2018/01/redhat-recommendations-for-azure/</loc>
     <lastmod>2018-01-23T11:16:04+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://johanburati.github.io/2018/01/first-post/</loc>
-    <lastmod>2018-01-23T10:02:02+09:00</lastmod>
   </url>
   
   <url>
@@ -39,7 +19,7 @@
   
   <url>
     <loc>https://johanburati.github.io/post/</loc>
-    <lastmod>2018-01-23T14:24:11+09:00</lastmod>
+    <lastmod>2018-01-23T11:16:04+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -50,7 +30,7 @@
   
   <url>
     <loc>https://johanburati.github.io/</loc>
-    <lastmod>2018-01-23T14:24:11+09:00</lastmod>
+    <lastmod>2018-01-23T11:16:04+09:00</lastmod>
     <priority>0</priority>
   </url>
   

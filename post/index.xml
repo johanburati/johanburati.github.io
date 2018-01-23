@@ -6,30 +6,10 @@
     <description>Recent content in Posts on johanburati&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 23 Jan 2018 14:24:11 +0900</lastBuildDate>
+    <lastBuildDate>Tue, 23 Jan 2018 11:16:04 +0900</lastBuildDate>
     
 	<atom:link href="https://johanburati.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>Encrypted Vm Yum Update</title>
-      <link>https://johanburati.github.io/2018/01/encrypted-vm-yum-update/</link>
-      <pubDate>Tue, 23 Jan 2018 14:24:11 +0900</pubDate>
-      
-      <guid>https://johanburati.github.io/2018/01/encrypted-vm-yum-update/</guid>
-      <description>After running &amp;ldquo;yum update&amp;rdquo; on a encrypted VM run yumupdatefix.sh to rebuild the initramfs with the patched version of the Dracut module. If you do not do that your VM will not be able to boot.</description>
-    </item>
-    
-    <item>
-      <title>Mount Blobs With Dysk</title>
-      <link>https://johanburati.github.io/2018/01/mount-blobs-with-dysk/</link>
-      <pubDate>Tue, 23 Jan 2018 12:58:38 +0900</pubDate>
-      
-      <guid>https://johanburati.github.io/2018/01/mount-blobs-with-dysk/</guid>
-      <description>With dysk you can create disks and attach disks quickly on your VM using storage blobs.
-curl https://raw.githubusercontent.com/johanburati/bin/master/dysk.ko.$(uname -r) -o dysk.ko
-sudo cp dysk.4.13.0-17-generic.ko /lib/modules/$(uname -r)/kernel/drivers/misc/dysk.ko</description>
-    </item>
     
     <item>
       <title>Redhat Recommendations for Azure</title>
@@ -39,15 +19,6 @@ sudo cp dysk.4.13.0-17-generic.ko /lib/modules/$(uname -r)/kernel/drivers/misc/d
       <guid>https://johanburati.github.io/2018/01/redhat-recommendations-for-azure/</guid>
       <description>The following are recommendation from Redhat for VMs running in Microsoft Azure.
    Option Recommendation     LVM Do not use Logical Volume Manager (LVM) on the operating system disk. Use regular partitions and format the disk using ext3, ext4, or xfs. LVM or RAID can be used for data disks.   ssh ssh must be enabled to provide remote access to your Azure VMs.   dhcp The primary virtual adapter should be configured for dhcp (IPv4 only).</description>
-    </item>
-    
-    <item>
-      <title>First Post</title>
-      <link>https://johanburati.github.io/2018/01/first-post/</link>
-      <pubDate>Tue, 23 Jan 2018 10:02:02 +0900</pubDate>
-      
-      <guid>https://johanburati.github.io/2018/01/first-post/</guid>
-      <description>Hello World !</description>
     </item>
     
   </channel>
