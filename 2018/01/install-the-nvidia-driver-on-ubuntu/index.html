@@ -20,7 +20,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="generator" content="Hugo 0.32.2 with theme Tranquilpeak 0.4.3-BETA">
-    <title>Redhat Recommendations for Azure</title>
+    <title>Install the Nvidia driver on Ubuntu</title>
     <meta name="author" content="johanburati&#39;s blog">
     <meta name="keywords" content="">
 
@@ -28,18 +28,18 @@
     
 
     
-    <meta name="description" content="The following are recommendation from Redhat for VMs running in Microsoft Azure.
-   Option Recommendation     LVM Do not use Logical Volume Manager (LVM) on the operating system disk. Use regular partitions and format the disk using ext3, ext4, or xfs. LVM or RAID can be used for data disks.   ssh ssh must be enabled to provide remote access to your Azure VMs.   dhcp The primary virtual adapter should be configured for dhcp (IPv4 only).">
-    <meta property="og:description" content="The following are recommendation from Redhat for VMs running in Microsoft Azure.
-   Option Recommendation     LVM Do not use Logical Volume Manager (LVM) on the operating system disk. Use regular partitions and format the disk using ext3, ext4, or xfs. LVM or RAID can be used for data disks.   ssh ssh must be enabled to provide remote access to your Azure VMs.   dhcp The primary virtual adapter should be configured for dhcp (IPv4 only).">
+    <meta name="description" content="I wrote a script to install the NVIDIA CUDA driver on Ubuntu, you can run it on a freshly deployed VM like this:
+curl https://raw.githubusercontent.com/johanburati/azure/master/ubuntu-install-cuda.sh | sudo bash  Tested on 2018-01-13 with the Canonical:UbuntuServer:16.04-LTS:latest image (kernel: 4.13.0-1005-azure)">
+    <meta property="og:description" content="I wrote a script to install the NVIDIA CUDA driver on Ubuntu, you can run it on a freshly deployed VM like this:
+curl https://raw.githubusercontent.com/johanburati/azure/master/ubuntu-install-cuda.sh | sudo bash  Tested on 2018-01-13 with the Canonical:UbuntuServer:16.04-LTS:latest image (kernel: 4.13.0-1005-azure)">
     <meta property="og:type" content="blog">
-    <meta property="og:title" content="Redhat Recommendations for Azure">
-    <meta property="og:url" content="/2018/01/redhat-recommendations-for-azure/">
+    <meta property="og:title" content="Install the Nvidia driver on Ubuntu">
+    <meta property="og:url" content="/2018/01/install-the-nvidia-driver-on-ubuntu/">
     <meta property="og:site_name" content="johanburati&#39;s blog">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="johanburati&#39;s blog">
-    <meta name="twitter:description" content="The following are recommendation from Redhat for VMs running in Microsoft Azure.
-   Option Recommendation     LVM Do not use Logical Volume Manager (LVM) on the operating system disk. Use regular partitions and format the disk using ext3, ext4, or xfs. LVM or RAID can be used for data disks.   ssh ssh must be enabled to provide remote access to your Azure VMs.   dhcp The primary virtual adapter should be configured for dhcp (IPv4 only).">
+    <meta name="twitter:description" content="I wrote a script to install the NVIDIA CUDA driver on Ubuntu, you can run it on a freshly deployed VM like this:
+curl https://raw.githubusercontent.com/johanburati/azure/master/ubuntu-install-cuda.sh | sudo bash  Tested on 2018-01-13 with the Canonical:UbuntuServer:16.04-LTS:latest image (kernel: 4.13.0-1005-azure)">
     
     
 
@@ -216,13 +216,13 @@ ga('send', 'pageview');
             <div class="post-header main-content-wrap text-left">
   
     <h1 class="post-title" itemprop="headline">
-      Redhat Recommendations for Azure
+      Install the Nvidia driver on Ubuntu
     </h1>
   
   
   <div class="postShorten-meta post-meta">
     
-      <time itemprop="datePublished" datetime="2018-01-23T11:16:04&#43;09:00">
+      <time itemprop="datePublished" datetime="2018-01-23T16:33:38&#43;09:00">
         
   January 23, 2018
 
@@ -235,55 +235,12 @@ ga('send', 'pageview');
           
           <div class="post-content markdown" itemprop="articleBody">
             <div class="main-content-wrap">
-              <p>The following are recommendation from Redhat for VMs running in Microsoft Azure.</p>
+              <p>I wrote a script to install the NVIDIA CUDA driver on Ubuntu, you can run it on a freshly deployed VM like this:</p>
 
-<table>
-<thead>
-<tr>
-<th>Option</th>
-<th>Recommendation</th>
-</tr>
-</thead>
+<pre><code>curl https://raw.githubusercontent.com/johanburati/azure/master/ubuntu-install-cuda.sh | sudo bash
+</code></pre>
 
-<tbody>
-<tr>
-<td><em>LVM</em></td>
-<td>Do not use Logical Volume Manager (LVM) on the operating system disk. Use regular partitions and format the disk using ext3, ext4, or xfs. LVM or RAID can be used for data disks.</td>
-</tr>
-
-<tr>
-<td><em>ssh</em></td>
-<td>ssh must be enabled to provide remote access to your Azure VMs.</td>
-</tr>
-
-<tr>
-<td><em>dhcp</em></td>
-<td>The primary virtual adapter should be configured for dhcp (IPv4 only).</td>
-</tr>
-
-<tr>
-<td><em>Network</em></td>
-<td>Manager This service should be disabled on RHEL 6.x images.</td>
-</tr>
-
-<tr>
-<td><em>Swap Space</em></td>
-<td>Do not create a dedicated swap file or swap partition. Swap space may be configured in the Azure Linux agent.</td>
-</tr>
-
-<tr>
-<td><em>NIC Choose</em></td>
-<td>virtio device for the primary virtual network adapter.</td>
-</tr>
-
-<tr>
-<td><em>encryption</em></td>
-<td>Do not use full disk encryption for the operating system disk. Data disks can be encrypted.</td>
-</tr>
-</tbody>
-</table>
-
-<p>ref: <a href="https://access.redhat.com/articles/product-configuration-for-azure">https://access.redhat.com/articles/product-configuration-for-azure</a></p>
+<p>Tested on 2018-01-13 with the Canonical:UbuntuServer:16.04-LTS:latest image (kernel: 4.13.0-1005-azure)</p>
 
               
             </div>
@@ -299,7 +256,7 @@ ga('send', 'pageview');
           
             <li class="post-action">
               
-                <a class="post-action-btn btn btn--default tooltip--top" href="https://johanburati.github.io/2018/01/install-the-nvidia-driver-on-ubuntu/" data-tooltip="Install the Nvidia driver on Ubuntu">
+                <a class="post-action-btn btn btn--disabled">
               
                   <i class="fa fa-angle-left"></i>
                   <span class="hide-xs hide-sm text-small icon-ml">NEXT</span>
@@ -307,7 +264,7 @@ ga('send', 'pageview');
             </li>
             <li class="post-action">
               
-                <a class="post-action-btn btn btn--disabled">
+                <a class="post-action-btn btn btn--default tooltip--top" href="https://johanburati.github.io/2018/01/redhat-recommendations-for-azure/" data-tooltip="Redhat Recommendations for Azure">
               
                   <span class="hide-xs hide-sm text-small icon-mr">PREVIOUS</span>
                   <i class="fa fa-angle-right"></i>
@@ -367,7 +324,7 @@ ga('send', 'pageview');
           
             <li class="post-action">
               
-                <a class="post-action-btn btn btn--default tooltip--top" href="https://johanburati.github.io/2018/01/install-the-nvidia-driver-on-ubuntu/" data-tooltip="Install the Nvidia driver on Ubuntu">
+                <a class="post-action-btn btn btn--disabled">
               
                   <i class="fa fa-angle-left"></i>
                   <span class="hide-xs hide-sm text-small icon-ml">NEXT</span>
@@ -375,7 +332,7 @@ ga('send', 'pageview');
             </li>
             <li class="post-action">
               
-                <a class="post-action-btn btn btn--disabled">
+                <a class="post-action-btn btn btn--default tooltip--top" href="https://johanburati.github.io/2018/01/redhat-recommendations-for-azure/" data-tooltip="Redhat Recommendations for Azure">
               
                   <span class="hide-xs hide-sm text-small icon-mr">PREVIOUS</span>
                   <i class="fa fa-angle-right"></i>
@@ -525,9 +482,9 @@ curl https://raw.githubusercontent.com/johanburati/azure/master/ubuntu-install-c
     
       <script>
         var disqus_config = function () {
-          this.page.url = 'https:\/\/johanburati.github.io\/2018\/01\/redhat-recommendations-for-azure\/';
+          this.page.url = 'https:\/\/johanburati.github.io\/2018\/01\/install-the-nvidia-driver-on-ubuntu\/';
           
-            this.page.identifier = '\/2018\/01\/redhat-recommendations-for-azure\/'
+            this.page.identifier = '\/2018\/01\/install-the-nvidia-driver-on-ubuntu\/'
           
         };
         (function() {
