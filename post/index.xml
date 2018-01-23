@@ -6,10 +6,20 @@
     <description>Recent content in Posts on johanburati&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 23 Jan 2018 11:16:04 +0900</lastBuildDate>
+    <lastBuildDate>Tue, 23 Jan 2018 16:33:38 +0900</lastBuildDate>
     
 	<atom:link href="https://johanburati.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Install Nvidia Driver Ubuntu</title>
+      <link>https://johanburati.github.io/2018/01/install-nvidia-driver-ubuntu/</link>
+      <pubDate>Tue, 23 Jan 2018 16:33:38 +0900</pubDate>
+      
+      <guid>https://johanburati.github.io/2018/01/install-nvidia-driver-ubuntu/</guid>
+      <description>I wrote a script to install the NVIDIA CUDA driver on Ubuntu, you can run it on a freshly deployed VM like this:
+curl https://raw.githubusercontent.com/johanburati/azure/master/ubuntu-install-cuda.sh | sudo bash  Tested on 2018-01-13 with the Canonical:UbuntuServer:16.04-LTS:latest image (kernel: 4.13.0-1005-azure)</description>
+    </item>
     
     <item>
       <title>Redhat Recommendations for Azure</title>
