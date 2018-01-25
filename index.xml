@@ -22,6 +22,15 @@ curl https://raw.githubusercontent.com/johanburati/azure/master/ubuntu-install-c
     </item>
     
     <item>
+      <title>About</title>
+      <link>https://johanburati.github.io/about/</link>
+      <pubDate>Tue, 23 Jan 2018 11:57:00 +0900</pubDate>
+      
+      <guid>https://johanburati.github.io/about/</guid>
+      <description>Hello World !</description>
+    </item>
+    
+    <item>
       <title>Redhat Recommendations for Azure</title>
       <link>https://johanburati.github.io/2018/01/redhat-recommendations-for-azure/</link>
       <pubDate>Tue, 23 Jan 2018 11:16:04 +0900</pubDate>
