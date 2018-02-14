@@ -3,7 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://johanburati.github.io/posts/azure-linux-images/</loc>
+    <loc>https://johanburati.github.io/2018/02/azure-linux-images/</loc>
     <lastmod>2018-02-14T09:00:00+09:00</lastmod>
   </url>
   
@@ -32,14 +32,8 @@
   </url>
   
   <url>
-    <loc>https://johanburati.github.io/posts/</loc>
-    <lastmod>2018-02-14T09:00:00+09:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://johanburati.github.io/post/</loc>
-    <lastmod>2018-01-23T16:33:38+09:00</lastmod>
+    <lastmod>2018-02-14T09:00:00+09:00</lastmod>
     <priority>0</priority>
   </url>
   
