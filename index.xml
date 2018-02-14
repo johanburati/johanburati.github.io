@@ -18,7 +18,7 @@
       
       <guid>https://johanburati.github.io/2018/02/azure-linux-images/</guid>
       <description>Here is a table with the latest linux images and the installed kernel version.
-   Distro Image Kernel     Ubuntu 16.04 Canonical:UbuntuServer:16.04-LTS:latest 4.13.0-1007-azure   Ubuntu 17.10 Canonical:UbuntuServer:17.10:latest 4.13.0-32-generic   Ubuntu 18.10 Canonical:UbuntuServer:18.04-DAILY-LTS:latest 4.13.0-32-generic   Centos 7.3 OpenLogic:CentOS:7.3:latest    Centos 7.4 OpenLogic:CentOS:7.4:latest    RHEL 7.4 RedHat:RHEL:7-RAW:latest 3.10.0-693.11.6   RHEL 7.3 RedHat:RHEL:7.3:latest 3.10.0-514.28.1   SLES 12-SP3 SUSE:SLES:12-SP3:latest 4.4.103-6.38-default    </description>
+   Distro Image Kernel     Centos 7.3 OpenLogic:CentOS:7.3:latest 3.10.0-514.26.2   Centos 7.4 OpenLogic:CentOS:7.4:latest 3.10.0-693.11.6   Oracle 7.3 Oracle:Oracle-Linux:7.3:latest 4.1.12-103.7.4   Oracle 7.4 Oracle:Oracle-Linux:7.4:latest 4.1.12-103.3.8   RHEL 7.3 RedHat:RHEL:7.3:latest 3.10.0-514.28.1   RHEL 7.4 RedHat:RHEL:7-RAW:latest 3.10.0-693.11.6   SLES 12-SP3 SUSE:SLES:12-SP3:latest 4.4.103-6.38-default   Ubuntu 16.04 Canonical:UbuntuServer:16.04-LTS:latest 4.13.0-1007-azure   Ubuntu 17.</description>
     </item>
     
     <item>
