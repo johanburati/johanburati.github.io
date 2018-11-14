@@ -235,7 +235,7 @@ ga('send', 'pageview');
 
     </div>
     <div class="postShorten-excerpt" itemprop="articleBody">
-      Latest images (as of 2018-02-14)    Distro Image Kernel     Centos 7.3 OpenLogic:CentOS:7.3:latest 3.10.0-514.26.2   Centos 7.4 OpenLogic:CentOS:7.4:latest 3.10.0-693.11.6   Oracle 7.3 Oracle:Oracle-Linux:7.3:latest 4.1.12-103.7.4   Oracle 7.4 Oracle:Oracle-Linux:7.4:latest 4.1.12-103.3.8   RHEL 7.3 RedHat:RHEL:7.3:latest 3.10.0-514.28.1   RHEL 7.4 RedHat:RHEL:7-RAW:latest 3.10.0-693.11.6   SLES 12-SP3 SUSE:SLES:12-SP3:latest 4.4.103-6.38-default   Ubuntu 16.04 Canonical:UbuntuServer:16.04-LTS:latest 4.13.0-1007-azure   Ubuntu 17.10 Canonical:UbuntuServer:17.10:latest 4.13.0-32-generic   Ubuntu 18.
+      Latest images    Distro Image Kernel     RHEL 7.6 RedHat:RHEL:7-RAW:latest 3.10.0-957   RHEL 7.5 RedHat:RHEL:7.5:latest 3.10.0-862.11.6.   RHEL 7.3 RedHat:RHEL:7.3:latest 3.10.0-514.28.1   Centos 7.5 OpenLogic:CentOS:7.5:latest 3.10.0-862.11.6   Centos 7.4 OpenLogic:CentOS:7.4:latest 3.10.0-693.11.6   Centos 7.3 OpenLogic:CentOS:7.3:latest 3.10.0-514.26.2   Oracle 7.5 Oracle:Oracle-Linux:7.5:latest 4.14.35-1818.1.6.el7uek   SLES 12-SP3 SUSE:SLES:12-SP3:latest 4.4.143-4.13-azure   Ubuntu 18.10 Canonical:UbuntuServer:18.04-DAILY-LTS:latest 4.15.0-1025-azure   Ubuntu 17.10 Canonical:UbuntuServer:17.10:latest 4.
       <p>
         <a href="https://johanburati.github.io/2018/02/azure-linux-kernel/" class="postShorten-excerpt_link link">Continue reading</a>
         
@@ -273,9 +273,11 @@ ga('send', 'pageview');
 
     </div>
     <div class="postShorten-excerpt" itemprop="articleBody">
-       I wrote a script to install the NVIDIA driver on Ubuntu:
-wget https://raw.githubusercontent.com/johanburati/ms/master/ubuntu-install-cuda.sh chmod +x ubuntu-install-cuda.sh  You can use it like this:
- Install CUDA 9.1: sudo ./ubuntu-install-cuda.sh Install CUDA 9.0: sudo ./ubuntu-install-cuda.sh 9 Install CUDA 8.0: sudo ./ubuntu-install-cuda.sh 8 Uninstall CUDA: sudo./ubuntu-install-cuda.sh purge  Tested on    Date Image Kernel Result     2018-01-13 Canonical:UbuntuServer:16.04-LTS:latest 4.13.0-1005-azure OK   2018-01-14 Canonical:UbuntuServer:16.04-LTS:latest 4.13.0-1006-azure OK    
+      I wrote a script to install the NVIDIA driver on Ubuntu.
+You can simply run it like this to install the CUDA driver on a fresly installed Ubuntu VM:
+curl https://raw.githubusercontent.com/johanburati/ms/master/ubuntu-install-cuda.sh | sudo bash  Or you can download it and run it with an option to install a specific version or purge the driver:
+wget https://raw.githubusercontent.com/johanburati/ms/master/ubuntu-install-cuda.sh chmod +x ubuntu-install-cuda.sh  The different options:
+ Install CUDA 9.1: sudo .
       <p>
         <a href="https://johanburati.github.io/2018/01/install-the-nvidia-driver-on-ubuntu/" class="postShorten-excerpt_link link">Continue reading</a>
         
@@ -382,7 +384,7 @@ wget https://raw.githubusercontent.com/johanburati/ms/master/ubuntu-install-cuda
                   Feb 2, 2018
                 </span>
               </span>
-              <div class="media-content hide-xs font-merryweather">Latest images (as of 2018-02-14)    Distro Image Kernel     Centos 7.3 OpenLogic:CentOS:7.3:latest 3.10.0-514.26.2   Centos 7.4 OpenLogic:CentOS:7.4:latest 3.10.0-693.11.6   Oracle 7.3 Oracle:Oracle-Linux:7.3:latest 4.1.12-103.7.4   Oracle 7.4 Oracle:Oracle-Linux:7.4:latest 4.1.12-103.3.8   RHEL 7.3 RedHat:RHEL:7.3:latest 3.10.0-514.28.1   RHEL 7.4 RedHat:RHEL:7-RAW:latest 3.10.0-693.11.6   SLES 12-SP3 SUSE:SLES:12-SP3:latest 4.4.103-6.38-default   Ubuntu 16.04 Canonical:UbuntuServer:16.04-LTS:latest 4.13.0-1007-azure   Ubuntu 17.10 Canonical:UbuntuServer:17.10:latest 4.13.0-32-generic   Ubuntu 18.</div>
+              <div class="media-content hide-xs font-merryweather">Latest images    Distro Image Kernel     RHEL 7.6 RedHat:RHEL:7-RAW:latest 3.10.0-957   RHEL 7.5 RedHat:RHEL:7.5:latest 3.10.0-862.11.6.   RHEL 7.3 RedHat:RHEL:7.3:latest 3.10.0-514.28.1   Centos 7.5 OpenLogic:CentOS:7.5:latest 3.10.0-862.11.6   Centos 7.4 OpenLogic:CentOS:7.4:latest 3.10.0-693.11.6   Centos 7.3 OpenLogic:CentOS:7.3:latest 3.10.0-514.26.2   Oracle 7.5 Oracle:Oracle-Linux:7.5:latest 4.14.35-1818.1.6.el7uek   SLES 12-SP3 SUSE:SLES:12-SP3:latest 4.4.143-4.13-azure   Ubuntu 18.10 Canonical:UbuntuServer:18.04-DAILY-LTS:latest 4.15.0-1025-azure   Ubuntu 17.10 Canonical:UbuntuServer:17.10:latest 4.</div>
             </div>
             <div style="clear:both;"></div>
             <hr>
@@ -399,9 +401,11 @@ wget https://raw.githubusercontent.com/johanburati/ms/master/ubuntu-install-cuda
                   Jan 1, 2018
                 </span>
               </span>
-              <div class="media-content hide-xs font-merryweather"> I wrote a script to install the NVIDIA driver on Ubuntu:
-wget https://raw.githubusercontent.com/johanburati/ms/master/ubuntu-install-cuda.sh chmod +x ubuntu-install-cuda.sh  You can use it like this:
- Install CUDA 9.1: sudo ./ubuntu-install-cuda.sh Install CUDA 9.0: sudo ./ubuntu-install-cuda.sh 9 Install CUDA 8.0: sudo ./ubuntu-install-cuda.sh 8 Uninstall CUDA: sudo./ubuntu-install-cuda.sh purge  Tested on    Date Image Kernel Result     2018-01-13 Canonical:UbuntuServer:16.04-LTS:latest 4.13.0-1005-azure OK   2018-01-14 Canonical:UbuntuServer:16.04-LTS:latest 4.13.0-1006-azure OK    </div>
+              <div class="media-content hide-xs font-merryweather">I wrote a script to install the NVIDIA driver on Ubuntu.
+You can simply run it like this to install the CUDA driver on a fresly installed Ubuntu VM:
+curl https://raw.githubusercontent.com/johanburati/ms/master/ubuntu-install-cuda.sh | sudo bash  Or you can download it and run it with an option to install a specific version or purge the driver:
+wget https://raw.githubusercontent.com/johanburati/ms/master/ubuntu-install-cuda.sh chmod +x ubuntu-install-cuda.sh  The different options:
+ Install CUDA 9.1: sudo .</div>
             </div>
             <div style="clear:both;"></div>
             <hr>
