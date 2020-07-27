@@ -15,7 +15,7 @@
     
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="generator" content="Hugo 0.40.1 with theme Tranquilpeak 0.4.3-BETA">
+    <meta name="generator" content="Hugo 0.74.3 with theme Tranquilpeak 0.4.3-BETA">
     <title>404 Page not found</title>
     <meta name="author" content="johanburati&#39;s blog">
     <meta name="keywords" content="">
@@ -28,7 +28,7 @@
     <meta property="og:description" content="johanburati&#39;s blogs on linux, azure and more">
     <meta property="og:type" content="blog">
     <meta property="og:title" content="404 Page not found">
-    <meta property="og:url" content="">
+    <meta property="og:url" content="/404.html">
     <meta property="og:site_name" content="johanburati&#39;s blog">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="johanburati&#39;s blog">
@@ -65,14 +65,17 @@
 
     
       
-<script>
-(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-ga('create', 'UA-112923654-1', 'auto');
-ga('send', 'pageview');
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-112923654-1', 'auto');
+	
+	ga('send', 'pageview');
+}
 </script>
 
     
@@ -132,7 +135,7 @@ ga('send', 'pageview');
                   Feb 2, 2020
                 </span>
               </span>
-              <div class="media-content hide-xs font-merryweather">Latest images    Distro Image Kernel Vuln     Ubuntu 19.10 Canonical:UbuntuServer:19.10-DAILY:latest 5.3.0-1009-azure    Ubuntu 19.04 Canonical:UbuntuServer:19.04-DAILY:latest 5.0.0-1028-azure    Ubuntu 18.04 Canonical:UbuntuServer:18.04-LTS:latest 5.0.0-1028-azure    Ubuntu 16.04 Canonical:UbuntuServer:16.04.0-LTS:latest 4.15.0-1066-azure    SLES 12 SP4 SUSE:SLES:12-SP4:latest 4.12.14-6.29-azure    RHEL 8.0 RedHat:RHEL:8:latest 4.18.0-80.11.2.el8_0.x86_64    RHEL 7.7 RedHat:RHEL:7.7:latest 3.10.0-1062.el7.x86_64    RHEL 7.5 RedHat:RHEL:7.5:latest 3.10.0-862.43.1.el7.x86_64    RHEL 7.</div>
+              <div class="media-content hide-xs font-merryweather">Latest images    Distro Image Kernel Vuln     Ubuntu 18.04 Canonical:UbuntuServer:18.04-LTS:latest 5.3.0-1032-azure    SLES 15 SP2 SUSE:sles-15-sp2:gen1:latest 5.3.18-16-azure    SLES 12 SP5 SUSE:sles-12-sp5:gen1:latest 4.12.14-16.16-azure    RHEL 8.2 RedHat:RHEL:8.2:latest 4.18.0-193.el8.x86_64    RHEL 7.8 RedHat:RHEL:7.8:latest 3.10.0-1127.el7.x86_64    Oracle Linux 9.1 Oracle:Oracle-Linux:81:latest 4.18.0-147.8.1.el8_1.x86_64    Oracle Linux 7.8 Oracle:Oracle-Linux:78:latest 4.14.35-1902.302.2.el7uek.x86_64    CentOS 8.2 OpenLogic:CentOS:8_2:latest 4.18.0-193.6.3.el8_2.x86_64    CentOS 7.</div>
             </div>
             <div style="clear:both;"></div>
             <hr>
@@ -170,9 +173,9 @@ Note: If the system and libraries are not updated, the program will just continu
               </span>
               <div class="media-content hide-xs font-merryweather">I wrote a script to install the NVIDIA driver on Ubuntu.
 You can simply run it like this to install the CUDA driver on a fresly installed Ubuntu VM:
-curl https://raw.githubusercontent.com/johanburati/ms/master/ubuntu-install-cuda.sh | sudo bash  Or you can download it and run it with an option to install a specific version or purge the driver:
-wget https://raw.githubusercontent.com/johanburati/ms/master/ubuntu-install-cuda.sh chmod +x ubuntu-install-cuda.sh  The different options:
- Install CUDA 9.1: sudo .</div>
+curl https://raw.githubusercontent.com/johanburati/ms/master/ubuntu-install-cuda.sh | sudo bash Or you can download it and run it with an option to install a specific version or purge the driver:
+wget https://raw.githubusercontent.com/johanburati/ms/master/ubuntu-install-cuda.sh chmod +x ubuntu-install-cuda.sh The different options:
+ Install CUDA 9.1: sudo ./ubuntu-install-cuda.sh Install CUDA 9.</div>
             </div>
             <div style="clear:both;"></div>
             <hr>

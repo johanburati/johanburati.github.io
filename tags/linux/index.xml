@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Linux on johanburati&#39;s blog</title>
+    <title>linux on johanburati&#39;s blog</title>
     <link>https://johanburati.github.io/tags/linux/</link>
-    <description>Recent content in Linux on johanburati&#39;s blog</description>
+    <description>Recent content in linux on johanburati&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 04 Feb 2020 09:00:00 +0900</lastBuildDate>
@@ -17,7 +17,7 @@
       <pubDate>Tue, 04 Feb 2020 09:00:00 +0900</pubDate>
       
       <guid>https://johanburati.github.io/2020/02/azure-linux-kernel/</guid>
-      <description>Latest images    Distro Image Kernel Vuln     Ubuntu 19.10 Canonical:UbuntuServer:19.10-DAILY:latest 5.3.0-1009-azure    Ubuntu 19.04 Canonical:UbuntuServer:19.04-DAILY:latest 5.0.0-1028-azure    Ubuntu 18.04 Canonical:UbuntuServer:18.04-LTS:latest 5.0.0-1028-azure    Ubuntu 16.04 Canonical:UbuntuServer:16.04.0-LTS:latest 4.15.0-1066-azure    SLES 12 SP4 SUSE:SLES:12-SP4:latest 4.12.14-6.29-azure    RHEL 8.0 RedHat:RHEL:8:latest 4.18.0-80.11.2.el8_0.x86_64    RHEL 7.7 RedHat:RHEL:7.7:latest 3.10.0-1062.el7.x86_64    RHEL 7.5 RedHat:RHEL:7.5:latest 3.10.0-862.43.1.el7.x86_64    RHEL 7.</description>
+      <description>Latest images    Distro Image Kernel Vuln     Ubuntu 18.04 Canonical:UbuntuServer:18.04-LTS:latest 5.3.0-1032-azure    SLES 15 SP2 SUSE:sles-15-sp2:gen1:latest 5.3.18-16-azure    SLES 12 SP5 SUSE:sles-12-sp5:gen1:latest 4.12.14-16.16-azure    RHEL 8.2 RedHat:RHEL:8.2:latest 4.18.0-193.el8.x86_64    RHEL 7.8 RedHat:RHEL:7.8:latest 3.10.0-1127.el7.x86_64    Oracle Linux 9.1 Oracle:Oracle-Linux:81:latest 4.18.0-147.8.1.el8_1.x86_64    Oracle Linux 7.8 Oracle:Oracle-Linux:78:latest 4.14.35-1902.302.2.el7uek.x86_64    CentOS 8.2 OpenLogic:CentOS:8_2:latest 4.18.0-193.6.3.el8_2.x86_64    CentOS 7.</description>
     </item>
     
     <item>
@@ -39,9 +39,9 @@ Note: If the system and libraries are not updated, the program will just continu
       <guid>https://johanburati.github.io/2018/01/install-the-nvidia-driver-on-ubuntu/</guid>
       <description>I wrote a script to install the NVIDIA driver on Ubuntu.
 You can simply run it like this to install the CUDA driver on a fresly installed Ubuntu VM:
-curl https://raw.githubusercontent.com/johanburati/ms/master/ubuntu-install-cuda.sh | sudo bash  Or you can download it and run it with an option to install a specific version or purge the driver:
-wget https://raw.githubusercontent.com/johanburati/ms/master/ubuntu-install-cuda.sh chmod +x ubuntu-install-cuda.sh  The different options:
- Install CUDA 9.1: sudo .</description>
+curl https://raw.githubusercontent.com/johanburati/ms/master/ubuntu-install-cuda.sh | sudo bash Or you can download it and run it with an option to install a specific version or purge the driver:
+wget https://raw.githubusercontent.com/johanburati/ms/master/ubuntu-install-cuda.sh chmod +x ubuntu-install-cuda.sh The different options:
+ Install CUDA 9.1: sudo ./ubuntu-install-cuda.sh Install CUDA 9.</description>
     </item>
     
     <item>

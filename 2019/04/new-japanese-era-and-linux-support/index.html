@@ -19,7 +19,7 @@
     
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="generator" content="Hugo 0.40.1 with theme Tranquilpeak 0.4.3-BETA">
+    <meta name="generator" content="Hugo 0.74.3 with theme Tranquilpeak 0.4.3-BETA">
     <title>New Japanese Era and Linux Support</title>
     <meta name="author" content="johanburati&#39;s blog">
     <meta name="keywords" content="">
@@ -75,14 +75,17 @@ Note: If the system and libraries are not updated, the program will just continu
 
     
       
-<script>
-(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-ga('create', 'UA-112923654-1', 'auto');
-ga('send', 'pageview');
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-112923654-1', 'auto');
+	
+	ga('send', 'pageview');
+}
 </script>
 
     
@@ -218,19 +221,12 @@ ga('send', 'pageview');
           
           <div class="post-content markdown" itemprop="articleBody">
             <div class="main-content-wrap">
-              
-
-<h2 id="description">Description</h2>
-
+              <h2 id="description">Description</h2>
 <p>Beside the Gregorian calendar Japan use its own calendar for domestic paperwork.
 Following the abdication of the actual Emperor, the Japanese calendar era will change on May 1st, 2019.</p>
-
 <p>If you program use the Japanese area system and libraries need to be updated to support the new era.</p>
-
 <p>Note: If the system and libraries are not updated, the program will just continue using the current era (Heisei) instead of the new one (Reiwa).</p>
-
-<h2 id="centos-oracle-linux-rhel">Centos/Oracle Linux/RHEL</h2>
-
+<h2 id="centosoracle-linuxrhel">Centos/Oracle Linux/RHEL</h2>
 <table>
 <thead>
 <tr>
@@ -239,56 +235,47 @@ Following the abdication of the actual Emperor, the Japanese calendar era will c
 <th>Update</th>
 </tr>
 </thead>
-
 <tbody>
 <tr>
 <td>OpenLogic:CentOS:7.3:latest</td>
 <td>平成31年</td>
 <td>令和元年</td>
 </tr>
-
 <tr>
 <td>OpenLogic:CentOS:7.5:latest</td>
 <td>平成31年</td>
 <td>令和元年</td>
 </tr>
-
 <tr>
 <td>OpenLogic:CentOS:7.6:latest</td>
 <td>平成31年</td>
 <td>令和元年</td>
 </tr>
-
 <tr>
 <td>Oracle:Oracle-Linux:7.3:latest</td>
 <td>平成31年</td>
 <td>令和元年</td>
 </tr>
-
 <tr>
 <td>Oracle:Oracle-Linux:7.5:latest</td>
 <td>平成31年</td>
 <td>令和元年</td>
 </tr>
-
 <tr>
 <td>Oracle:Oracle-LinuxS:7.6:latest</td>
 <td>平成31年</td>
 <td>令和元年</td>
 </tr>
-
 <tr>
 <td>RedHat:RHEL:7.3:latest</td>
 <td>平成31年</td>
 <td>令和元年</td>
 </tr>
-
 <tr>
 <td>RedHat:RHEL:7.5:latest</td>
 <td>平成31年</td>
 <td>令和元年</td>
 </tr>
-
 <tr>
 <td>RedHat:RHEL:7-RAW:latest</td>
 <td>平成31年</td>
@@ -296,20 +283,14 @@ Following the abdication of the actual Emperor, the Japanese calendar era will c
 </tr>
 </tbody>
 </table>
-
 <h3 id="update">Update</h3>
-
 <p><code>sudo yum update glibc</code></p>
-
 <h3 id="links">Links</h3>
-
 <ul>
 <li><a href="https://access.redhat.com/solutions/2749651">Does the change of the Japanese Era affect Red Hat Enterprise Linux?</a></li>
 <li><a href="https://bugzilla.redhat.com/show_bug.cgi?id=1677093">Bug 1677093 - The Japanese Era name will be changed on 2019-05-01 / component icu / rhel8</a></li>
 </ul>
-
 <h2 id="sles">SLES</h2>
-
 <table>
 <thead>
 <tr>
@@ -318,20 +299,17 @@ Following the abdication of the actual Emperor, the Japanese calendar era will c
 <th>Update</th>
 </tr>
 </thead>
-
 <tbody>
 <tr>
 <td>SUSE:SLES-Standard:12-SP3:latest</td>
 <td>平成31年</td>
 <td><a href="#Notes">(1)</a></td>
 </tr>
-
 <tr>
 <td>SUSE:SLES-Standard:12-SP4:latest</td>
 <td>平成31年</td>
 <td><a href="#Notes">(1)</a></td>
 </tr>
-
 <tr>
 <td>SUSE:SLES-Standard:15:latest</td>
 <td>平成31年</td>
@@ -339,19 +317,13 @@ Following the abdication of the actual Emperor, the Japanese calendar era will c
 </tr>
 </tbody>
 </table>
-
 <h3 id="update-1">Update</h3>
-
 <p><code>sudo zypper update glibc-locale</code></p>
-
 <h3 id="links-1">Links</h3>
-
 <ul>
 <li><a href="https://www.suse.com/support/kb/doc/?id=7023279">Does the change of the Japanese Era affect Red Hat Enterprise Linux?</a></li>
 </ul>
-
 <h2 id="ubuntu">Ubuntu</h2>
-
 <table>
 <thead>
 <tr>
@@ -360,20 +332,17 @@ Following the abdication of the actual Emperor, the Japanese calendar era will c
 <th>Update</th>
 </tr>
 </thead>
-
 <tbody>
 <tr>
 <td>Canonical:UbuntuServer:16.04-LTS:latest</td>
 <td>平成31年</td>
 <td><a href="#Notes">(1)</a></td>
 </tr>
-
 <tr>
 <td>Canonical:UbuntuServer:18.04-LTS:latest</td>
 <td>平成31年</td>
 <td><a href="#Notes">(1)</a></td>
 </tr>
-
 <tr>
 <td>Canonical:UbuntuServer:19.04-LTS:latest</td>
 <td>令和元年</td>
@@ -381,19 +350,13 @@ Following the abdication of the actual Emperor, the Japanese calendar era will c
 </tr>
 </tbody>
 </table>
-
 <h3 id="update-2">Update</h3>
-
 <p><code>sudo apt updat &amp;&amp; sudo apt install locales</code></p>
-
 <h3 id="links-2">Links</h3>
-
 <ul>
 <li><a href="https://bugs.launchpad.net/ubuntu/bionic/+source/mozc/+bug/1823444">The Japanese Era name will be changed on May 1, 2019</a></li>
 </ul>
-
 <h2 id="notes">Notes</h2>
-
 <p>(1) no new package available</p>
 
               
@@ -589,7 +552,7 @@ Following the abdication of the actual Emperor, the Japanese calendar era will c
                   Feb 2, 2020
                 </span>
               </span>
-              <div class="media-content hide-xs font-merryweather">Latest images    Distro Image Kernel Vuln     Ubuntu 19.10 Canonical:UbuntuServer:19.10-DAILY:latest 5.3.0-1009-azure    Ubuntu 19.04 Canonical:UbuntuServer:19.04-DAILY:latest 5.0.0-1028-azure    Ubuntu 18.04 Canonical:UbuntuServer:18.04-LTS:latest 5.0.0-1028-azure    Ubuntu 16.04 Canonical:UbuntuServer:16.04.0-LTS:latest 4.15.0-1066-azure    SLES 12 SP4 SUSE:SLES:12-SP4:latest 4.12.14-6.29-azure    RHEL 8.0 RedHat:RHEL:8:latest 4.18.0-80.11.2.el8_0.x86_64    RHEL 7.7 RedHat:RHEL:7.7:latest 3.10.0-1062.el7.x86_64    RHEL 7.5 RedHat:RHEL:7.5:latest 3.10.0-862.43.1.el7.x86_64    RHEL 7.</div>
+              <div class="media-content hide-xs font-merryweather">Latest images    Distro Image Kernel Vuln     Ubuntu 18.04 Canonical:UbuntuServer:18.04-LTS:latest 5.3.0-1032-azure    SLES 15 SP2 SUSE:sles-15-sp2:gen1:latest 5.3.18-16-azure    SLES 12 SP5 SUSE:sles-12-sp5:gen1:latest 4.12.14-16.16-azure    RHEL 8.2 RedHat:RHEL:8.2:latest 4.18.0-193.el8.x86_64    RHEL 7.8 RedHat:RHEL:7.8:latest 3.10.0-1127.el7.x86_64    Oracle Linux 9.1 Oracle:Oracle-Linux:81:latest 4.18.0-147.8.1.el8_1.x86_64    Oracle Linux 7.8 Oracle:Oracle-Linux:78:latest 4.14.35-1902.302.2.el7uek.x86_64    CentOS 8.2 OpenLogic:CentOS:8_2:latest 4.18.0-193.6.3.el8_2.x86_64    CentOS 7.</div>
             </div>
             <div style="clear:both;"></div>
             <hr>
@@ -627,9 +590,9 @@ Note: If the system and libraries are not updated, the program will just continu
               </span>
               <div class="media-content hide-xs font-merryweather">I wrote a script to install the NVIDIA driver on Ubuntu.
 You can simply run it like this to install the CUDA driver on a fresly installed Ubuntu VM:
-curl https://raw.githubusercontent.com/johanburati/ms/master/ubuntu-install-cuda.sh | sudo bash  Or you can download it and run it with an option to install a specific version or purge the driver:
-wget https://raw.githubusercontent.com/johanburati/ms/master/ubuntu-install-cuda.sh chmod +x ubuntu-install-cuda.sh  The different options:
- Install CUDA 9.1: sudo .</div>
+curl https://raw.githubusercontent.com/johanburati/ms/master/ubuntu-install-cuda.sh | sudo bash Or you can download it and run it with an option to install a specific version or purge the driver:
+wget https://raw.githubusercontent.com/johanburati/ms/master/ubuntu-install-cuda.sh chmod +x ubuntu-install-cuda.sh The different options:
+ Install CUDA 9.1: sudo ./ubuntu-install-cuda.sh Install CUDA 9.</div>
             </div>
             <div style="clear:both;"></div>
             <hr>
