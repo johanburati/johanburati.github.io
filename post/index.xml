@@ -22,7 +22,8 @@
       <pubDate>Mon, 22 Apr 2019 12:00:01 +0900</pubDate>
       
       <guid>https://johanburati.github.io/2019/04/new-japanese-era-and-linux-support/</guid>
-      <description>Description Beside the Gregorian calendar Japan use its own calendar for domestic paperwork. Following the abdication of the actual Emperor, the Japanese calendar era will change on May 1st, 2019. If you program use the Japanese area system and libraries need to be updated to support the new era.
+      <description>Description Beside the Gregorian calendar Japan use its own calendar for domestic paperwork. Following the abdication of the actual Emperor, the Japanese calendar era will change on May 1st, 2019.
+If you program use the Japanese area system and libraries need to be updated to support the new era.
 Note: If the system and libraries are not updated, the program will just continue using the current era (Heisei) instead of the new one (Reiwa).</description>
     </item>
     
