@@ -8,30 +8,22 @@
 <meta name="generator" content="Hugo 0.83.1 with theme Tranquilpeak 0.4.8-BETA">
 <meta name="author" content="johanburati&#39;s blog">
 <meta name="keywords" content=", linux, azure">
-<meta name="description" content="
-Description
-Beside the Gregorian calendar Japan use its own calendar for domestic paperwork.
-Following the abdication of the actual Emperor, the Japanese calendar era will change on May 1st, 2019.">
+<meta name="description" content="Description Beside the Gregorian calendar Japan use its own calendar for domestic paperwork. Following the abdication of the actual Emperor, the Japanese calendar era will change on May 1st, 2019. If you program use the Japanese area system and libraries need to be updated to support the new era.
+Note: If the system and libraries are not updated, the program will just continue using the current era (Heisei) instead of the new one (Reiwa).">
 
 
-<meta property="og:description" content="
-Description
-Beside the Gregorian calendar Japan use its own calendar for domestic paperwork.
-Following the abdication of the actual Emperor, the Japanese calendar era will change on May 1st, 2019.">
+<meta property="og:description" content="Description Beside the Gregorian calendar Japan use its own calendar for domestic paperwork. Following the abdication of the actual Emperor, the Japanese calendar era will change on May 1st, 2019. If you program use the Japanese area system and libraries need to be updated to support the new era.
+Note: If the system and libraries are not updated, the program will just continue using the current era (Heisei) instead of the new one (Reiwa).">
 <meta property="og:type" content="article">
 <meta property="og:title" content="New Japanese Era and Linux Support">
 <meta name="twitter:title" content="New Japanese Era and Linux Support">
 <meta property="og:url" content="https://johanburati.github.io/2019/04/new-japanese-era-and-linux-support/">
 <meta property="twitter:url" content="https://johanburati.github.io/2019/04/new-japanese-era-and-linux-support/">
 <meta property="og:site_name" content="johanburati&#39;s blog">
-<meta property="og:description" content="
-Description
-Beside the Gregorian calendar Japan use its own calendar for domestic paperwork.
-Following the abdication of the actual Emperor, the Japanese calendar era will change on May 1st, 2019.">
-<meta name="twitter:description" content="
-Description
-Beside the Gregorian calendar Japan use its own calendar for domestic paperwork.
-Following the abdication of the actual Emperor, the Japanese calendar era will change on May 1st, 2019.">
+<meta property="og:description" content="Description Beside the Gregorian calendar Japan use its own calendar for domestic paperwork. Following the abdication of the actual Emperor, the Japanese calendar era will change on May 1st, 2019. If you program use the Japanese area system and libraries need to be updated to support the new era.
+Note: If the system and libraries are not updated, the program will just continue using the current era (Heisei) instead of the new one (Reiwa).">
+<meta name="twitter:description" content="Description Beside the Gregorian calendar Japan use its own calendar for domestic paperwork. Following the abdication of the actual Emperor, the Japanese calendar era will change on May 1st, 2019. If you program use the Japanese area system and libraries need to be updated to support the new era.
+Note: If the system and libraries are not updated, the program will just continue using the current era (Heisei) instead of the new one (Reiwa).">
 <meta property="og:locale" content="en-us">
 
   
@@ -237,13 +229,45 @@ if (!doNotTrack) {
           
           <div class="post-content markdown" itemprop="articleBody">
             <div class="main-content-wrap">
-              <!-- raw HTML omitted -->
+              
+
+<h1 id="table-of-contents">Table of Contents</h1><nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#description">Description</a></li>
+<li><a href="#centos-oracle-linux-rhel">Centos/Oracle Linux/RHEL</a>
+<ul>
+<li><a href="#update">Update</a></li>
+<li><a href="#links">Links</a></li>
+</ul></li>
+<li><a href="#sles">SLES</a>
+<ul>
+<li><a href="#update-1">Update</a></li>
+<li><a href="#links-1">Links</a></li>
+</ul></li>
+<li><a href="#ubuntu">Ubuntu</a>
+<ul>
+<li><a href="#update-2">Update</a></li>
+<li><a href="#links-2">Links</a></li>
+</ul></li>
+<li><a href="#notes">Notes</a></li>
+</ul></li>
+</ul>
+</nav>
+
 <h2 id="description">Description</h2>
+
 <p>Beside the Gregorian calendar Japan use its own calendar for domestic paperwork.
-Following the abdication of the actual Emperor, the Japanese calendar era will change on May 1st, 2019.</p>
+Following the abdication of the actual Emperor, the Japanese calendar era will change on May 1st, 2019.
+<!-- more --></p>
+
 <p>If you program use the Japanese area system and libraries need to be updated to support the new era.</p>
+
 <p>Note: If the system and libraries are not updated, the program will just continue using the current era (Heisei) instead of the new one (Reiwa).</p>
-<h2 id="centosoracle-linuxrhel">Centos/Oracle Linux/RHEL</h2>
+
+<h2 id="centos-oracle-linux-rhel">Centos/Oracle Linux/RHEL</h2>
+
 <table>
 <thead>
 <tr>
@@ -252,47 +276,56 @@ Following the abdication of the actual Emperor, the Japanese calendar era will c
 <th>Update</th>
 </tr>
 </thead>
+
 <tbody>
 <tr>
 <td>OpenLogic:CentOS:7.3:latest</td>
 <td>平成31年</td>
 <td>令和元年</td>
 </tr>
+
 <tr>
 <td>OpenLogic:CentOS:7.5:latest</td>
 <td>平成31年</td>
 <td>令和元年</td>
 </tr>
+
 <tr>
 <td>OpenLogic:CentOS:7.6:latest</td>
 <td>平成31年</td>
 <td>令和元年</td>
 </tr>
+
 <tr>
 <td>Oracle:Oracle-Linux:7.3:latest</td>
 <td>平成31年</td>
 <td>令和元年</td>
 </tr>
+
 <tr>
 <td>Oracle:Oracle-Linux:7.5:latest</td>
 <td>平成31年</td>
 <td>令和元年</td>
 </tr>
+
 <tr>
 <td>Oracle:Oracle-LinuxS:7.6:latest</td>
 <td>平成31年</td>
 <td>令和元年</td>
 </tr>
+
 <tr>
 <td>RedHat:RHEL:7.3:latest</td>
 <td>平成31年</td>
 <td>令和元年</td>
 </tr>
+
 <tr>
 <td>RedHat:RHEL:7.5:latest</td>
 <td>平成31年</td>
 <td>令和元年</td>
 </tr>
+
 <tr>
 <td>RedHat:RHEL:7-RAW:latest</td>
 <td>平成31年</td>
@@ -300,14 +333,20 @@ Following the abdication of the actual Emperor, the Japanese calendar era will c
 </tr>
 </tbody>
 </table>
+
 <h3 id="update">Update</h3>
+
 <p><code>sudo yum update glibc</code></p>
+
 <h3 id="links">Links</h3>
+
 <ul>
 <li><a href="https://access.redhat.com/solutions/2749651">Does the change of the Japanese Era affect Red Hat Enterprise Linux?</a></li>
 <li><a href="https://bugzilla.redhat.com/show_bug.cgi?id=1677093">Bug 1677093 - The Japanese Era name will be changed on 2019-05-01 / component icu / rhel8</a></li>
 </ul>
+
 <h2 id="sles">SLES</h2>
+
 <table>
 <thead>
 <tr>
@@ -316,17 +355,20 @@ Following the abdication of the actual Emperor, the Japanese calendar era will c
 <th>Update</th>
 </tr>
 </thead>
+
 <tbody>
 <tr>
 <td>SUSE:SLES-Standard:12-SP3:latest</td>
 <td>平成31年</td>
 <td><a href="#Notes">(1)</a></td>
 </tr>
+
 <tr>
 <td>SUSE:SLES-Standard:12-SP4:latest</td>
 <td>平成31年</td>
 <td><a href="#Notes">(1)</a></td>
 </tr>
+
 <tr>
 <td>SUSE:SLES-Standard:15:latest</td>
 <td>平成31年</td>
@@ -334,13 +376,19 @@ Following the abdication of the actual Emperor, the Japanese calendar era will c
 </tr>
 </tbody>
 </table>
+
 <h3 id="update-1">Update</h3>
+
 <p><code>sudo zypper update glibc-locale</code></p>
+
 <h3 id="links-1">Links</h3>
+
 <ul>
 <li><a href="https://www.suse.com/support/kb/doc/?id=7023279">Does the change of the Japanese Era affect Red Hat Enterprise Linux?</a></li>
 </ul>
+
 <h2 id="ubuntu">Ubuntu</h2>
+
 <table>
 <thead>
 <tr>
@@ -349,17 +397,20 @@ Following the abdication of the actual Emperor, the Japanese calendar era will c
 <th>Update</th>
 </tr>
 </thead>
+
 <tbody>
 <tr>
 <td>Canonical:UbuntuServer:16.04-LTS:latest</td>
 <td>平成31年</td>
 <td><a href="#Notes">(1)</a></td>
 </tr>
+
 <tr>
 <td>Canonical:UbuntuServer:18.04-LTS:latest</td>
 <td>平成31年</td>
 <td><a href="#Notes">(1)</a></td>
 </tr>
+
 <tr>
 <td>Canonical:UbuntuServer:19.04-LTS:latest</td>
 <td>令和元年</td>
@@ -367,14 +418,21 @@ Following the abdication of the actual Emperor, the Japanese calendar era will c
 </tr>
 </tbody>
 </table>
+
 <h3 id="update-2">Update</h3>
+
 <p><code>sudo apt updat &amp;&amp; sudo apt install locales</code></p>
+
 <h3 id="links-2">Links</h3>
+
 <ul>
 <li><a href="https://bugs.launchpad.net/ubuntu/bionic/+source/mozc/+bug/1823444">The Japanese Era name will be changed on May 1, 2019</a></li>
 </ul>
+
 <h2 id="notes">Notes</h2>
+
 <p>(1) no new package available</p>
+
               
             </div>
           </div>
@@ -436,7 +494,7 @@ Following the abdication of the actual Emperor, the Japanese calendar era will c
       
       <li class="post-action">
         
-          <a class="post-action-btn btn btn--default" href="#">
+          <a class="post-action-btn btn btn--default" href="#table-of-contents">
         
           <i class="fa fa-list"></i>
         </a>
@@ -504,7 +562,7 @@ Following the abdication of the actual Emperor, the Japanese calendar era will c
       
       <li class="post-action">
         
-          <a class="post-action-btn btn btn--default" href="#">
+          <a class="post-action-btn btn btn--default" href="#table-of-contents">
         
           <i class="fa fa-list"></i>
         </a>

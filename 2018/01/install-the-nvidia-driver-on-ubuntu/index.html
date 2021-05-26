@@ -239,20 +239,26 @@ if (!doNotTrack) {
           
           <div class="post-content markdown" itemprop="articleBody">
             <div class="main-content-wrap">
-              <p>I wrote a script to install the NVIDIA driver on Ubuntu.</p>
+              
+
+<p>I wrote a script to install the NVIDIA driver on Ubuntu.</p>
+
 <p>You can simply run it like this to install the CUDA driver on a fresly installed Ubuntu VM:</p>
-<pre><code>curl https://raw.githubusercontent.com/johanburati/ms/master/ubuntu-install-cuda.sh | sudo bash
-</code></pre><p>Or you can download it and run it with an option to install a specific version or purge the driver:</p>
+<pre><code>curl https://raw.githubusercontent.com/johanburati/ms/master/ubuntu-install-cuda.sh | sudo bash</code></pre>
+<p>Or you can download it and run it with an option to install a specific version or purge the driver:</p>
 <pre><code>wget https://raw.githubusercontent.com/johanburati/ms/master/ubuntu-install-cuda.sh
-chmod +x ubuntu-install-cuda.sh
-</code></pre><p>The different options:</p>
+chmod +x ubuntu-install-cuda.sh</code></pre>
+<p>The different options:</p>
+
 <ul>
 <li>Install CUDA 9.1: <code>sudo ./ubuntu-install-cuda.sh</code></li>
 <li>Install CUDA 9.0: <code>sudo ./ubuntu-install-cuda.sh 9</code></li>
 <li>Install CUDA 8.0: <code>sudo ./ubuntu-install-cuda.sh 8</code></li>
 <li>Uninstall CUDA  : <code>sudo ./ubuntu-install-cuda.sh purge</code></li>
 </ul>
+
 <h3 id="tested-on">Tested on</h3>
+
 <table>
 <thead>
 <tr>
@@ -262,6 +268,7 @@ chmod +x ubuntu-install-cuda.sh
 <th>Result</th>
 </tr>
 </thead>
+
 <tbody>
 <tr>
 <td>2018-01-13</td>
@@ -269,6 +276,7 @@ chmod +x ubuntu-install-cuda.sh
 <td>4.13.0-1005-azure</td>
 <td>OK</td>
 </tr>
+
 <tr>
 <td>2018-01-14</td>
 <td>Canonical:UbuntuServer:16.04-LTS:latest</td>

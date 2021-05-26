@@ -230,6 +230,7 @@ if (!doNotTrack) {
           <div class="post-content markdown" itemprop="articleBody">
             <div class="main-content-wrap">
               <p>The following are recommendation from Redhat for VMs running in Microsoft Azure.</p>
+
 <table>
 <thead>
 <tr>
@@ -237,37 +238,45 @@ if (!doNotTrack) {
 <th>Recommendation</th>
 </tr>
 </thead>
+
 <tbody>
 <tr>
 <td><em>LVM</em></td>
 <td>Do not use Logical Volume Manager (LVM) on the operating system disk. Use regular partitions and format the disk using ext3, ext4, or xfs. LVM or RAID can be used for data disks.</td>
 </tr>
+
 <tr>
 <td><em>ssh</em></td>
 <td>ssh must be enabled to provide remote access to your Azure VMs.</td>
 </tr>
+
 <tr>
 <td><em>dhcp</em></td>
 <td>The primary virtual adapter should be configured for dhcp (IPv4 only).</td>
 </tr>
+
 <tr>
 <td><em>Network</em></td>
 <td>Manager This service should be disabled on RHEL 6.x images.</td>
 </tr>
+
 <tr>
 <td><em>Swap Space</em></td>
 <td>Do not create a dedicated swap file or swap partition. Swap space may be configured in the Azure Linux agent.</td>
 </tr>
+
 <tr>
 <td><em>NIC Choose</em></td>
 <td>virtio device for the primary virtual network adapter.</td>
 </tr>
+
 <tr>
 <td><em>encryption</em></td>
 <td>Do not use full disk encryption for the operating system disk. Data disks can be encrypted.</td>
 </tr>
 </tbody>
 </table>
+
 <p><a href="https://access.redhat.com/articles/product-configuration-for-azure">reference</a></p>
 
               
