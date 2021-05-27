@@ -13,7 +13,7 @@
       <pubDate>Tue, 04 Feb 2020 09:00:00 +0900</pubDate>
       
       <guid>https://johanburati.github.io/2020/02/azure-linux-kernel/</guid>
-      <description>Latest images    Distro Image Kernel Vuln     Ubuntu 20.04 g2 Canonical:0001-com-ubuntu-server-focal:20_04-lts-gen2:latest 5.4.0-1040-azure    Ubuntu 18.04 g2 Canonical:UbuntuServer:18_04-lts-gen2:latest 5.4.0-1039-azure    SLES 15 SP2 g2 SUSE:sles-15-sp2:gen2:latest 5.3.18-18.32-azure    SLES 12 SP5 g2 SUSE:sles-12-sp5:gen2:latest 4.12.14-16.41-azure    RHEL 8.3 g2 RedHat:RHEL:83-gen2:latest 4.18.0-240.1.1.el8_3.x86_64    RHEL 7.8 g2 RedHat:RHEL:79-gen2:latest 3.10.0-1160.el7.x86_64    Oracle Linux 8.1 g2 Oracle:Oracle-Linux:81-gen2:latest 4.18.0-147.8.1.el8_1.x86_64    Oracle Linux 7.</description>
+      <description>&lt;p&gt;List of lastes major distro images and kernel version&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -22,9 +22,7 @@
       <pubDate>Mon, 22 Apr 2019 12:00:01 +0900</pubDate>
       
       <guid>https://johanburati.github.io/2019/04/new-japanese-era-and-linux-support/</guid>
-      <description>Description Beside the Gregorian calendar Japan use its own calendar for domestic paperwork. Following the abdication of the actual Emperor, the Japanese calendar era will change on May 1st, 2019.
-If you program use the Japanese area system and libraries need to be updated to support the new era.
-Note: If the system and libraries are not updated, the program will just continue using the current era (Heisei) instead of the new one (Reiwa).</description>
+      <description>&lt;p&gt;Update your Linux system to handle new Japanese Era&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -33,11 +31,7 @@ Note: If the system and libraries are not updated, the program will just continu
       <pubDate>Tue, 23 Jan 2018 16:33:38 +0900</pubDate>
       
       <guid>https://johanburati.github.io/2018/01/install-the-nvidia-driver-on-ubuntu/</guid>
-      <description>I wrote a script to install the NVIDIA driver on Ubuntu.
-You can simply run it like this to install the CUDA driver on a fresly installed Ubuntu VM:
-curl https://raw.githubusercontent.com/johanburati/ms/master/ubuntu-install-cuda.sh | sudo bash Or you can download it and run it with an option to install a specific version or purge the driver:
-wget https://raw.githubusercontent.com/johanburati/ms/master/ubuntu-install-cuda.sh chmod +x ubuntu-install-cuda.sh The different options:
- Install CUDA 9.1: sudo ./ubuntu-install-cuda.sh Install CUDA 9.</description>
+      <description>&lt;p&gt;I wrote a script to install the NVIDIA driver on Ubuntu.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -46,17 +40,7 @@ wget https://raw.githubusercontent.com/johanburati/ms/master/ubuntu-install-cuda
       <pubDate>Tue, 23 Jan 2018 11:16:04 +0900</pubDate>
       
       <guid>https://johanburati.github.io/2018/01/redhat-recommendations-for-azure/</guid>
-      <description>The following are recommendation from Redhat for VMs running in Microsoft Azure.
-   Option Recommendation     LVM Do not use Logical Volume Manager (LVM) on the operating system disk. Use regular partitions and format the disk using ext3, ext4, or xfs. LVM or RAID can be used for data disks.   ssh ssh must be enabled to provide remote access to your Azure VMs.   dhcp The primary virtual adapter should be configured for dhcp (IPv4 only).</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://johanburati.github.io/1/01/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://johanburati.github.io/1/01/</guid>
-      <description>Testing face detection in golang, pretty impressive !</description>
+      <description>&lt;p&gt;The followings are recommendation from Redhat for VMs running in Microsoft Azure.&lt;/p&gt;</description>
     </item>
     
   </channel>
