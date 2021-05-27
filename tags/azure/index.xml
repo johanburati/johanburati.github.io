@@ -6,7 +6,16 @@
     <description>Recent content in azure on johanburati&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 04 Feb 2020 09:00:00 +0900</lastBuildDate><atom:link href="https://johanburati.github.io/tags/azure/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 01 Apr 2021 12:00:01 +0900</lastBuildDate><atom:link href="https://johanburati.github.io/tags/azure/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Install Azure Powershell on Linux</title>
+      <link>https://johanburati.github.io/2021/04/install-azure-powershell-on-linux/</link>
+      <pubDate>Thu, 01 Apr 2021 12:00:01 +0900</pubDate>
+      
+      <guid>https://johanburati.github.io/2021/04/install-azure-powershell-on-linux/</guid>
+      <description>&lt;p&gt;First use the following commands to setup the &lt;em&gt;Microsoft&lt;/em&gt; repo and install &lt;em&gt;Powershell&lt;/em&gt; from it:&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>Azure Linux kernel</title>
       <link>https://johanburati.github.io/2020/02/azure-linux-kernel/</link>
