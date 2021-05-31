@@ -8,31 +8,33 @@
 <meta name="generator" content="Hugo 0.83.1 with theme Tranquilpeak 0.4.8-BETA">
 <meta name="author" content="johanburati&#39;s blog">
 <meta name="keywords" content=", linux, azure">
-<meta name="description" content="I wrote a script to install the NVIDIA driver on Ubuntu.">
+<meta name="description" content="General instructions on how to setup kdump and the status on various Azure Marketplace images.">
 
 
-<meta property="og:description" content="I wrote a script to install the NVIDIA driver on Ubuntu.">
+<meta property="og:description" content="General instructions on how to setup kdump and the status on various Azure Marketplace images.">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Install the Nvidia driver on Ubuntu">
-<meta name="twitter:title" content="Install the Nvidia driver on Ubuntu">
-<meta property="og:url" content="https://johanburati.github.io/2018/01/install-the-nvidia-driver-on-ubuntu/">
-<meta property="twitter:url" content="https://johanburati.github.io/2018/01/install-the-nvidia-driver-on-ubuntu/">
+<meta property="og:title" content="Setup kdump on Azure Linux VMs">
+<meta name="twitter:title" content="Setup kdump on Azure Linux VMs">
+<meta property="og:url" content="https://johanburati.github.io/2021/05/setup-kdump-on-azure-linux-vms/">
+<meta property="twitter:url" content="https://johanburati.github.io/2021/05/setup-kdump-on-azure-linux-vms/">
 <meta property="og:site_name" content="johanburati&#39;s blog">
-<meta property="og:description" content="I wrote a script to install the NVIDIA driver on Ubuntu.">
-<meta name="twitter:description" content="I wrote a script to install the NVIDIA driver on Ubuntu.">
+<meta property="og:description" content="General instructions on how to setup kdump and the status on various Azure Marketplace images.">
+<meta name="twitter:description" content="General instructions on how to setup kdump and the status on various Azure Marketplace images.">
 <meta property="og:locale" content="en-us">
 
   
-    <meta property="article:published_time" content="2018-01-23T16:33:38">
+    <meta property="article:published_time" content="2021-05-26T12:00:01">
   
   
-    <meta property="article:modified_time" content="2018-01-23T16:33:38">
+    <meta property="article:modified_time" content="2021-05-26T12:00:01">
   
   
   
   
     
       <meta property="article:tag" content="linux">
+    
+      <meta property="article:tag" content="azure">
     
   
 
@@ -53,14 +55,14 @@
   <meta property="twitter:image" content="https://avatars1.githubusercontent.com/u/106444?s=460&v=4">
 
 
-    <title>Install the Nvidia driver on Ubuntu</title>
+    <title>Setup kdump on Azure Linux VMs</title>
 
     <link rel="icon" href="https://azlinux.blob.core.windows.net/pub/favicon.ico">
     
 
     
 
-    <link rel="canonical" href="https://johanburati.github.io/2018/01/install-the-nvidia-driver-on-ubuntu/">
+    <link rel="canonical" href="https://johanburati.github.io/2021/05/setup-kdump-on-azure-linux-vms/">
 
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
@@ -204,15 +206,15 @@ if (!doNotTrack) {
             <div class="post-header main-content-wrap text-left">
   
     <h1 class="post-title" itemprop="headline">
-      Install the Nvidia driver on Ubuntu
+      Setup kdump on Azure Linux VMs
     </h1>
   
   
   <div class="postShorten-meta post-meta">
     
-      <time itemprop="datePublished" datetime="2018-01-23T16:33:38&#43;09:00">
+      <time itemprop="datePublished" datetime="2021-05-26T12:00:01&#43;09:00">
         
-  January 23, 2018
+  May 26, 2021
 
       </time>
     
@@ -223,41 +225,33 @@ if (!doNotTrack) {
           
           <div class="post-content markdown" itemprop="articleBody">
             <div class="main-content-wrap">
-              <p>I wrote a script to install the NVIDIA driver on Ubuntu.</p>
-<p>You can simply run it like this to install the CUDA driver on a fresly installed Ubuntu VM:</p>
-<pre><code>curl https://raw.githubusercontent.com/johanburati/ms/master/ubuntu-install-cuda.sh | sudo bash
-</code></pre><p>Or you can download it and run it with an option to install a specific version or purge the driver:</p>
-<pre><code>wget https://raw.githubusercontent.com/johanburati/ms/master/ubuntu-install-cuda.sh
-chmod +x ubuntu-install-cuda.sh
-</code></pre><p>The different options:</p>
-<ul>
-<li>Install CUDA 9.1: <code>sudo ./ubuntu-install-cuda.sh</code></li>
-<li>Install CUDA 9.0: <code>sudo ./ubuntu-install-cuda.sh 9</code></li>
-<li>Install CUDA 8.0: <code>sudo ./ubuntu-install-cuda.sh 8</code></li>
-<li>Uninstall CUDA  : <code>sudo ./ubuntu-install-cuda.sh purge</code></li>
-</ul>
-<h3 id="tested-on">Tested on</h3>
+              <p>General instructions on how to setup <strong>kdump</strong> and the status on various Azure Marketplace images.</p>
+<h1 id="table-of-contents">Table of Contents</h1><nav id="TableOfContents">
+  <ul>
+    <li><a href="#setup-kdump">Setup kdump</a></li>
+    <li><a href="#azure-maketplace-images-kdump-status">Azure Maketplace Images Kdump Status</a></li>
+  </ul>
+</nav>
+<h2 id="setup-kdump">Setup kdump</h2>
+<h2 id="azure-maketplace-images-kdump-status">Azure Maketplace Images Kdump Status</h2>
 <table>
 <thead>
 <tr>
-<th>Date</th>
 <th>Image</th>
-<th>Kernel</th>
-<th>Result</th>
+<th>kdump Status</th>
+<th>SysRq Status</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>2018-01-13</td>
-<td>Canonical:UbuntuServer:16.04-LTS:latest</td>
-<td>4.13.0-1005-azure</td>
-<td>OK</td>
+<td>RedHat:RHEL:7_9:latest</td>
+<td>Enabled</td>
+<td>Enabled</td>
 </tr>
 <tr>
-<td>2018-01-14</td>
-<td>Canonical:UbuntuServer:16.04-LTS:latest</td>
-<td>4.13.0-1006-azure</td>
-<td>OK</td>
+<td>RedHat:RHEL:83-gen2:latest</td>
+<td>Enabled</td>
+<td>Enabled</td>
 </tr>
 </tbody>
 </table>
@@ -274,6 +268,8 @@ chmod +x ubuntu-install-cuda.sh
                     
   <a class="tag tag--primary tag--small" href="https://johanburati.github.io/tags/linux/">linux</a>
 
+  <a class="tag tag--primary tag--small" href="https://johanburati.github.io/tags/azure/">azure</a>
+
                   </div>
                 
               
@@ -285,7 +281,7 @@ chmod +x ubuntu-install-cuda.sh
           
             <li class="post-action">
               
-                <a class="post-action-btn btn btn--default tooltip--top" href="https://johanburati.github.io/2018/01/spectre-and-meltdown/" data-tooltip="Spectre and Meltdown">
+                <a class="post-action-btn btn btn--default tooltip--top" href="https://johanburati.github.io/2021/05/azure-linux-image-kernel-2021-05-31/" data-tooltip="Azure Linux Image Kernel 2021-05-31">
               
                   <i class="fa fa-angle-left"></i>
                   <span class="hide-xs hide-sm text-small icon-ml">NEXT</span>
@@ -293,7 +289,7 @@ chmod +x ubuntu-install-cuda.sh
             </li>
             <li class="post-action">
               
-                <a class="post-action-btn btn btn--default tooltip--top" href="https://johanburati.github.io/2018/01/encrypted-vm-yum-update/" data-tooltip="Encrypted Vm Yum Update">
+                <a class="post-action-btn btn btn--default tooltip--top" href="https://johanburati.github.io/2021/04/install-azure-powershell-on-linux/" data-tooltip="Install Azure Powershell on Linux">
               
                   <span class="hide-xs hide-sm text-small icon-mr">PREVIOUS</span>
                   <i class="fa fa-angle-right"></i>
@@ -320,7 +316,7 @@ chmod +x ubuntu-install-cuda.sh
       
       <li class="post-action">
         
-          <a class="post-action-btn btn btn--default" href="#">
+          <a class="post-action-btn btn btn--default" href="#table-of-contents">
         
           <i class="fa fa-list"></i>
         </a>
@@ -353,7 +349,7 @@ chmod +x ubuntu-install-cuda.sh
           
             <li class="post-action">
               
-                <a class="post-action-btn btn btn--default tooltip--top" href="https://johanburati.github.io/2018/01/spectre-and-meltdown/" data-tooltip="Spectre and Meltdown">
+                <a class="post-action-btn btn btn--default tooltip--top" href="https://johanburati.github.io/2021/05/azure-linux-image-kernel-2021-05-31/" data-tooltip="Azure Linux Image Kernel 2021-05-31">
               
                   <i class="fa fa-angle-left"></i>
                   <span class="hide-xs hide-sm text-small icon-ml">NEXT</span>
@@ -361,7 +357,7 @@ chmod +x ubuntu-install-cuda.sh
             </li>
             <li class="post-action">
               
-                <a class="post-action-btn btn btn--default tooltip--top" href="https://johanburati.github.io/2018/01/encrypted-vm-yum-update/" data-tooltip="Encrypted Vm Yum Update">
+                <a class="post-action-btn btn btn--default tooltip--top" href="https://johanburati.github.io/2021/04/install-azure-powershell-on-linux/" data-tooltip="Install Azure Powershell on Linux">
               
                   <span class="hide-xs hide-sm text-small icon-mr">PREVIOUS</span>
                   <i class="fa fa-angle-right"></i>
@@ -388,7 +384,7 @@ chmod +x ubuntu-install-cuda.sh
       
       <li class="post-action">
         
-          <a class="post-action-btn btn btn--default" href="#">
+          <a class="post-action-btn btn btn--default" href="#table-of-contents">
         
           <i class="fa fa-list"></i>
         </a>
@@ -465,9 +461,9 @@ function updateMinWidth() {
     
       <script>
         var disqus_config = function () {
-          this.page.url = 'https:\/\/johanburati.github.io\/2018\/01\/install-the-nvidia-driver-on-ubuntu\/';
+          this.page.url = 'https:\/\/johanburati.github.io\/2021\/05\/setup-kdump-on-azure-linux-vms\/';
           
-            this.page.identifier = '\/2018\/01\/install-the-nvidia-driver-on-ubuntu\/'
+            this.page.identifier = '\/2021\/05\/setup-kdump-on-azure-linux-vms\/'
           
         };
         (function() {

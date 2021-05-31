@@ -1,12 +1,11 @@
 ---
-title: "Azure Linux Image Kernel "
-date: 2021-05-31T18:09:45+09:00
+title: "Azure Linux Image Kernel 2021-05-31"
+date: 2021-05-31T18:14:33+09:00
 draft: false
 tags: [linux,azure]
 ---
-List of lastes major distro images and kernel version
+List of lastest major distro images SKU and their kernel version as of 2021-05-31.
 <!--more-->
-<!--toc-->
 ### Latest images
 
 Distro | Image | Kernel
