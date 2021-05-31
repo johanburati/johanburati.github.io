@@ -1,0 +1,25 @@
+---
+title: "Azure Linux Image Kernel "
+date: 2021-05-31T18:09:45+09:00
+draft: false
+tags: [linux,azure]
+---
+List of lastes major distro images and kernel version
+<!--more-->
+<!--toc-->
+### Latest images
+
+Distro | Image | Kernel
+--- | --- | ---
+CentOS 7.9 g2 | OpenLogic:CentOS:7_9-gen2:7.9.2021020401 | 3.10.0-1160.15.2.el7
+CentOS 8.3 g2 | OpenLogic:CentOS:8_3-gen2:8.3.2021020401 | 4.18.0-240.10.1.el8_3
+Debian 10 g2 | Debian:debian-10:10-gen2:0.20210329.591 | Missing!
+Debian 11 g2 | Debian:debian-11-daily:11-gen2:0.20210530.653 | Missing!
+Oracle Linux 7.9 g2 | Oracle:Oracle-Linux:79-gen2:7.9.14 | 5.4.17-2102.201.3.el7uek
+Oracle Linux 8.1 g2 | Oracle:Oracle-Linux:81-gen2:8.1.11 | 4.18.0-147.8.1.el8_1
+RHEL 7.8 g2 | RedHat:RHEL:79-gen2:7.9.2021051702 | 3.10.0-1160.el7
+RHEL 8.4 g2 | RedHat:RHEL:84-gen2:8.4.2021052302 | 4.18.0-305.el8
+SLES 12 SP5 g2 | SUSE:sles-12-sp5:gen2:2021.03.05 | 4.12.14-16.44-azure
+SLES 15 SP2 g2 | SUSE:sles-15-sp2:gen2:2021.03.03 | 5.3.18-18.35-azure
+Ubuntu 18.04 g2 | Canonical:UbuntuServer:18_04-lts-gen2:18.04.202105120 | 5.4.0-1047-azure
+Ubuntu 20.04 g2 | Canonical:0001-com-ubuntu-server-focal:20_04-lts-gen2:20.04.202105130 | Missing!
