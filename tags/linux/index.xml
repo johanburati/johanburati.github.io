@@ -6,23 +6,14 @@
     <description>Recent content in linux on johanburati&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 31 May 2021 18:17:46 +0900</lastBuildDate><atom:link href="https://johanburati.github.io/tags/linux/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 01 Jun 2021 14:44:09 +0900</lastBuildDate><atom:link href="https://johanburati.github.io/tags/linux/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Azure Linux Image Kernel 2021-05-31</title>
-      <link>https://johanburati.github.io/2021/05/azure-linux-image-kernel-2021-05-31/</link>
-      <pubDate>Mon, 31 May 2021 18:17:46 +0900</pubDate>
+      <title>Azure Linux Image Kernel 2021-06-01</title>
+      <link>https://johanburati.github.io/2021/06/azure-linux-image-kernel-2021-06-01/</link>
+      <pubDate>Tue, 01 Jun 2021 14:44:09 +0900</pubDate>
       
-      <guid>https://johanburati.github.io/2021/05/azure-linux-image-kernel-2021-05-31/</guid>
-      <description>&lt;p&gt;List of lastest major distro images SKU and their kernel version as of 2021-05-31.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Setup kdump on Azure Linux VMs</title>
-      <link>https://johanburati.github.io/2021/05/setup-kdump-on-azure-linux-vms/</link>
-      <pubDate>Wed, 26 May 2021 12:00:01 +0900</pubDate>
-      
-      <guid>https://johanburati.github.io/2021/05/setup-kdump-on-azure-linux-vms/</guid>
-      <description>&lt;p&gt;General instructions on how to setup &lt;strong&gt;kdump&lt;/strong&gt; and the status on various Azure Marketplace images.&lt;/p&gt;</description>
+      <guid>https://johanburati.github.io/2021/06/azure-linux-image-kernel-2021-06-01/</guid>
+      <description>&lt;p&gt;List of lastest major distro images SKU and their kernel version as of Jun 01, 2021.&lt;/p&gt;</description>
     </item>
     
     <item>

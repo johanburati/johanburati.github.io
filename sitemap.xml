@@ -3,25 +3,22 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://johanburati.github.io/tags/azure/</loc>
-    <lastmod>2021-05-31T18:17:46+09:00</lastmod>
+    <lastmod>2021-06-01T14:44:09+09:00</lastmod>
   </url><url>
-    <loc>https://johanburati.github.io/2021/05/azure-linux-image-kernel-2021-05-31/</loc>
-    <lastmod>2021-05-31T18:17:46+09:00</lastmod>
+    <loc>https://johanburati.github.io/2021/06/azure-linux-image-kernel-2021-06-01/</loc>
+    <lastmod>2021-06-01T14:44:09+09:00</lastmod>
   </url><url>
     <loc>https://johanburati.github.io/</loc>
-    <lastmod>2021-05-31T18:17:46+09:00</lastmod>
+    <lastmod>2021-06-01T14:44:09+09:00</lastmod>
   </url><url>
     <loc>https://johanburati.github.io/tags/linux/</loc>
-    <lastmod>2021-05-31T18:17:46+09:00</lastmod>
+    <lastmod>2021-06-01T14:44:09+09:00</lastmod>
   </url><url>
     <loc>https://johanburati.github.io/post/</loc>
-    <lastmod>2021-05-31T18:17:46+09:00</lastmod>
+    <lastmod>2021-06-01T14:44:09+09:00</lastmod>
   </url><url>
     <loc>https://johanburati.github.io/tags/</loc>
-    <lastmod>2021-05-31T18:17:46+09:00</lastmod>
-  </url><url>
-    <loc>https://johanburati.github.io/2021/05/setup-kdump-on-azure-linux-vms/</loc>
-    <lastmod>2021-05-26T12:00:01+09:00</lastmod>
+    <lastmod>2021-06-01T14:44:09+09:00</lastmod>
   </url><url>
     <loc>https://johanburati.github.io/2021/04/install-azure-powershell-on-linux/</loc>
     <lastmod>2021-04-01T12:00:01+09:00</lastmod>
@@ -32,20 +29,8 @@
     <loc>https://johanburati.github.io/2019/04/new-japanese-era-and-linux-support/</loc>
     <lastmod>2019-04-22T12:00:01+09:00</lastmod>
   </url><url>
-    <loc>https://johanburati.github.io/2018/09/azure-disks-performance/</loc>
-    <lastmod>2018-09-10T11:54:50+09:00</lastmod>
-  </url><url>
-    <loc>https://johanburati.github.io/2018/02/azure-disk-encryption/</loc>
-    <lastmod>2018-02-21T11:37:12+09:00</lastmod>
-  </url><url>
-    <loc>https://johanburati.github.io/2018/01/spectre-and-meltdown/</loc>
-    <lastmod>2018-01-24T11:56:01+09:00</lastmod>
-  </url><url>
     <loc>https://johanburati.github.io/2018/01/install-the-nvidia-driver-on-ubuntu/</loc>
     <lastmod>2018-01-23T16:33:38+09:00</lastmod>
-  </url><url>
-    <loc>https://johanburati.github.io/2018/01/encrypted-vm-yum-update/</loc>
-    <lastmod>2018-01-23T14:24:11+09:00</lastmod>
   </url><url>
     <loc>https://johanburati.github.io/2018/01/redhat-recommendations-for-azure/</loc>
     <lastmod>2018-01-23T11:16:04+09:00</lastmod>

@@ -6,23 +6,14 @@
     <description>Recent content in Posts on johanburati&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 31 May 2021 18:17:46 +0900</lastBuildDate><atom:link href="https://johanburati.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 01 Jun 2021 14:44:09 +0900</lastBuildDate><atom:link href="https://johanburati.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Azure Linux Image Kernel 2021-05-31</title>
-      <link>https://johanburati.github.io/2021/05/azure-linux-image-kernel-2021-05-31/</link>
-      <pubDate>Mon, 31 May 2021 18:17:46 +0900</pubDate>
+      <title>Azure Linux Image Kernel 2021-06-01</title>
+      <link>https://johanburati.github.io/2021/06/azure-linux-image-kernel-2021-06-01/</link>
+      <pubDate>Tue, 01 Jun 2021 14:44:09 +0900</pubDate>
       
-      <guid>https://johanburati.github.io/2021/05/azure-linux-image-kernel-2021-05-31/</guid>
-      <description>&lt;p&gt;List of lastest major distro images SKU and their kernel version as of 2021-05-31.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Setup kdump on Azure Linux VMs</title>
-      <link>https://johanburati.github.io/2021/05/setup-kdump-on-azure-linux-vms/</link>
-      <pubDate>Wed, 26 May 2021 12:00:01 +0900</pubDate>
-      
-      <guid>https://johanburati.github.io/2021/05/setup-kdump-on-azure-linux-vms/</guid>
-      <description>&lt;p&gt;General instructions on how to setup &lt;strong&gt;kdump&lt;/strong&gt; and the status on various Azure Marketplace images.&lt;/p&gt;</description>
+      <guid>https://johanburati.github.io/2021/06/azure-linux-image-kernel-2021-06-01/</guid>
+      <description>&lt;p&gt;List of lastest major distro images SKU and their kernel version as of Jun 01, 2021.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -53,50 +44,12 @@
     </item>
     
     <item>
-      <title>Azure Disks Performance</title>
-      <link>https://johanburati.github.io/2018/09/azure-disks-performance/</link>
-      <pubDate>Mon, 10 Sep 2018 11:54:50 +0900</pubDate>
-      
-      <guid>https://johanburati.github.io/2018/09/azure-disks-performance/</guid>
-      <description>==VM SPEED CAP
-VM Size | Max cached disk | Max uncached disk Standard_DS1_v2 | 4,000 / 32 MB/s | 3,200 / 48 MB/s Standard_DS2_v2 | 8,000 / 64 MB/s | 6,400 / 96 MB/s Standard_DS3_v2 | 16,000 / 128 MB/s | 12,800 / 192 MB/s
-==DISK SPEED CAP Disk | Size | IOPS | Throughput (MBps) | device P10 | 128 GB | 500 | 100 | /dev/sdc P20 | 512 GB | 2300 | 150 | /dev/sdd P30 | 1024 GB | 5000 | 200 | /dev/sde</description>
-    </item>
-    
-    <item>
-      <title>Azure Disk Encryption</title>
-      <link>https://johanburati.github.io/2018/02/azure-disk-encryption/</link>
-      <pubDate>Wed, 21 Feb 2018 11:37:12 +0900</pubDate>
-      
-      <guid>https://johanburati.github.io/2018/02/azure-disk-encryption/</guid>
-      <description> https://blogs.msdn.microsoft.com/azuresecurity/2017/07/13/applying-updates-to-a-encrypted-azure-iaas-red-hat-vm-using-yum-update/ yumupdatefix.sh  </description>
-    </item>
-    
-    <item>
-      <title>Spectre and Meltdown</title>
-      <link>https://johanburati.github.io/2018/01/spectre-and-meltdown/</link>
-      <pubDate>Wed, 24 Jan 2018 11:56:01 +0900</pubDate>
-      
-      <guid>https://johanburati.github.io/2018/01/spectre-and-meltdown/</guid>
-      <description>hello https://docs.microsoft.com/en-us/azure/virtual-machines/linux/mitigate-se</description>
-    </item>
-    
-    <item>
       <title>Install the Nvidia driver on Ubuntu</title>
       <link>https://johanburati.github.io/2018/01/install-the-nvidia-driver-on-ubuntu/</link>
       <pubDate>Tue, 23 Jan 2018 16:33:38 +0900</pubDate>
       
       <guid>https://johanburati.github.io/2018/01/install-the-nvidia-driver-on-ubuntu/</guid>
       <description>&lt;p&gt;I wrote a script to install the NVIDIA driver on Ubuntu.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Encrypted Vm Yum Update</title>
-      <link>https://johanburati.github.io/2018/01/encrypted-vm-yum-update/</link>
-      <pubDate>Tue, 23 Jan 2018 14:24:11 +0900</pubDate>
-      
-      <guid>https://johanburati.github.io/2018/01/encrypted-vm-yum-update/</guid>
-      <description>After running &amp;ldquo;yum update&amp;rdquo; on a encrypted VM run yumupdatefix.sh to rebuild the initramfs with the patched version of the Dracut module. If you do not do that your VM will not be able to boot.</description>
     </item>
     
     <item>
