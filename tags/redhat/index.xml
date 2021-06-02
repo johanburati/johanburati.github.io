@@ -6,13 +6,13 @@
     <description>Recent content in redhat on johanburati&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 02 Apr 2021 12:00:01 +0900</lastBuildDate><atom:link href="https://johanburati.github.io/tags/redhat/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 01 May 2021 12:00:01 +0900</lastBuildDate><atom:link href="https://johanburati.github.io/tags/redhat/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Disable floppy driver on RHEL</title>
-      <link>https://johanburati.github.io/2021/04/disable-floppy-driver-on-rhel/</link>
-      <pubDate>Fri, 02 Apr 2021 12:00:01 +0900</pubDate>
+      <link>https://johanburati.github.io/2021/05/disable-floppy-driver-on-rhel/</link>
+      <pubDate>Sat, 01 May 2021 12:00:01 +0900</pubDate>
       
-      <guid>https://johanburati.github.io/2021/04/disable-floppy-driver-on-rhel/</guid>
+      <guid>https://johanburati.github.io/2021/05/disable-floppy-driver-on-rhel/</guid>
       <description>&lt;p&gt;Instructions to disable &lt;em&gt;floppy&lt;/em&gt; driver on RHEL/CentOS VMs.&lt;/p&gt;</description>
     </item>
     

@@ -18,10 +18,10 @@
     
     <item>
       <title>Disable floppy driver on RHEL</title>
-      <link>https://johanburati.github.io/2021/04/disable-floppy-driver-on-rhel/</link>
-      <pubDate>Fri, 02 Apr 2021 12:00:01 +0900</pubDate>
+      <link>https://johanburati.github.io/2021/05/disable-floppy-driver-on-rhel/</link>
+      <pubDate>Sat, 01 May 2021 12:00:01 +0900</pubDate>
       
-      <guid>https://johanburati.github.io/2021/04/disable-floppy-driver-on-rhel/</guid>
+      <guid>https://johanburati.github.io/2021/05/disable-floppy-driver-on-rhel/</guid>
       <description>&lt;p&gt;Instructions to disable &lt;em&gt;floppy&lt;/em&gt; driver on RHEL/CentOS VMs.&lt;/p&gt;</description>
     </item>
     

@@ -8,25 +8,25 @@
 <meta name="generator" content="Hugo 0.83.1 with theme Tranquilpeak 0.4.8-BETA">
 <meta name="author" content="johanburati&#39;s blog">
 <meta name="keywords" content=", linux, azure">
-<meta name="description" content="List of lastest major distro images SKUs and their kernel version as of Jun 01, 2021.">
+<meta name="description" content="Instructions to disable floppy driver on RHEL/CentOS VMs.">
 
 
-<meta property="og:description" content="List of lastest major distro images SKUs and their kernel version as of Jun 01, 2021.">
+<meta property="og:description" content="Instructions to disable floppy driver on RHEL/CentOS VMs.">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Azure Linux Image Kernel 2021-06-01">
-<meta name="twitter:title" content="Azure Linux Image Kernel 2021-06-01">
-<meta property="og:url" content="https://johanburati.github.io/2021/06/azure-linux-image-kernel-2021-06-01/">
-<meta property="twitter:url" content="https://johanburati.github.io/2021/06/azure-linux-image-kernel-2021-06-01/">
+<meta property="og:title" content="Disable floppy driver on RHEL">
+<meta name="twitter:title" content="Disable floppy driver on RHEL">
+<meta property="og:url" content="https://johanburati.github.io/2021/05/disable-floppy-driver-on-rhel/">
+<meta property="twitter:url" content="https://johanburati.github.io/2021/05/disable-floppy-driver-on-rhel/">
 <meta property="og:site_name" content="johanburati&#39;s blog">
-<meta property="og:description" content="List of lastest major distro images SKUs and their kernel version as of Jun 01, 2021.">
-<meta name="twitter:description" content="List of lastest major distro images SKUs and their kernel version as of Jun 01, 2021.">
+<meta property="og:description" content="Instructions to disable floppy driver on RHEL/CentOS VMs.">
+<meta name="twitter:description" content="Instructions to disable floppy driver on RHEL/CentOS VMs.">
 <meta property="og:locale" content="en-us">
 
   
-    <meta property="article:published_time" content="2021-06-01T17:11:12">
+    <meta property="article:published_time" content="2021-05-01T12:00:01">
   
   
-    <meta property="article:modified_time" content="2021-06-01T17:11:12">
+    <meta property="article:modified_time" content="2021-05-01T12:00:01">
   
   
   
@@ -35,6 +35,8 @@
       <meta property="article:tag" content="linux">
     
       <meta property="article:tag" content="azure">
+    
+      <meta property="article:tag" content="redhat">
     
   
 
@@ -55,14 +57,14 @@
   <meta property="twitter:image" content="https://avatars1.githubusercontent.com/u/106444?s=460&v=4">
 
 
-    <title>Azure Linux Image Kernel 2021-06-01</title>
+    <title>Disable floppy driver on RHEL</title>
 
     <link rel="icon" href="https://azlinux.blob.core.windows.net/pub/favicon.ico">
     
 
     
 
-    <link rel="canonical" href="https://johanburati.github.io/2021/06/azure-linux-image-kernel-2021-06-01/">
+    <link rel="canonical" href="https://johanburati.github.io/2021/05/disable-floppy-driver-on-rhel/">
 
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
@@ -206,15 +208,15 @@ if (!doNotTrack) {
             <div class="post-header main-content-wrap text-left">
   
     <h1 class="post-title" itemprop="headline">
-      Azure Linux Image Kernel 2021-06-01
+      Disable floppy driver on RHEL
     </h1>
   
   
   <div class="postShorten-meta post-meta">
     
-      <time itemprop="datePublished" datetime="2021-06-01T17:11:12&#43;09:00">
+      <time itemprop="datePublished" datetime="2021-05-01T12:00:01&#43;09:00">
         
-  June 1, 2021
+  May 1, 2021
 
       </time>
     
@@ -225,79 +227,15 @@ if (!doNotTrack) {
           
           <div class="post-content markdown" itemprop="articleBody">
             <div class="main-content-wrap">
-              <p>List of lastest major distro images SKUs and their kernel version as of Jun 01, 2021.</p>
-<h3 id="latest-images">Latest images</h3>
-<table>
-<thead>
-<tr>
-<th>Distro</th>
-<th>Image SKU</th>
-<th>Kernel</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>CentOS 7.9 g2</td>
-<td>OpenLogic:CentOS:7_9-gen2:7.9.2021020401</td>
-<td>3.10.0-1160.15.2.el7</td>
-</tr>
-<tr>
-<td>CentOS 8.3 g2</td>
-<td>OpenLogic:CentOS:8_3-gen2:8.3.2021020401</td>
-<td>4.18.0-240.10.1.el8_3</td>
-</tr>
-<tr>
-<td>Debian 10 g2</td>
-<td>Debian:debian-10:10-gen2:0.20210329.591</td>
-<td>4.19.0-16-cloud-amd64</td>
-</tr>
-<tr>
-<td>Debian 11 g2</td>
-<td>Debian:debian-11-daily:11-gen2:0.20210531.654</td>
-<td>5.10.0-6-cloud-amd64</td>
-</tr>
-<tr>
-<td>Oracle Linux 7.9 g2</td>
-<td>Oracle:Oracle-Linux:79-gen2:7.9.14</td>
-<td>5.4.17-2102.201.3.el7uek</td>
-</tr>
-<tr>
-<td>Oracle Linux 8.1 g2</td>
-<td>Oracle:Oracle-Linux:81-gen2:8.1.11</td>
-<td>4.18.0-147.8.1.el8_1</td>
-</tr>
-<tr>
-<td>RHEL 7.8 g2</td>
-<td>RedHat:RHEL:79-gen2:7.9.2021051702</td>
-<td>3.10.0-1160.el7</td>
-</tr>
-<tr>
-<td>RHEL 8.4 g2</td>
-<td>RedHat:RHEL:84-gen2:8.4.2021052302</td>
-<td>4.18.0-305.el8</td>
-</tr>
-<tr>
-<td>SLES 12 SP5 g2</td>
-<td>SUSE:sles-12-sp5:gen2:2021.03.05</td>
-<td>4.12.14-16.44-azure</td>
-</tr>
-<tr>
-<td>SLES 15 SP2 g2</td>
-<td>SUSE:sles-15-sp2:gen2:2021.03.03</td>
-<td>5.3.18-18.35-azure</td>
-</tr>
-<tr>
-<td>Ubuntu 18.04 g2</td>
-<td>Canonical:UbuntuServer:18_04-lts-gen2:18.04.202105120</td>
-<td>5.4.0-1047-azure</td>
-</tr>
-<tr>
-<td>Ubuntu 20.04 g2</td>
-<td>Canonical:0001-com-ubuntu-server-focal:20_04-lts-gen2:20.04.202105130</td>
-<td>5.4.0-1047-azure</td>
-</tr>
-</tbody>
-</table>
+              <p>Instructions to disable <em>floppy</em> driver on RHEL/CentOS VMs.</p>
+<p>The <em>floppy</em> driver is enabled  on some of the RHEL/CentOS Marketplace images and the following error message will show up in the console log:</p>
+<pre><code>blk_update_request: I/O error, dev fd0, sector 0
+</code></pre><p>In order to avoid this message, blacklist the driver by adding <code>blacklist floppy</code> to the <em>modprobe</em> configuration:</p>
+<pre><code>echo &quot;blacklist floppy&quot; | sudo tee /etc/modprobe.d/blacklist-floppy.conf
+</code></pre><p>Remove the driver and rebuild <em>initramfs</em>:</p>
+<pre><code>sudo rmmod floppy
+dracut -f -v
+</code></pre><p>After rebooting the VM you should not see that error message anymore.</p>
               
             </div>
           </div>
@@ -313,6 +251,8 @@ if (!doNotTrack) {
 
   <a class="tag tag--primary tag--small" href="https://johanburati.github.io/tags/azure/">azure</a>
 
+  <a class="tag tag--primary tag--small" href="https://johanburati.github.io/tags/redhat/">redhat</a>
+
                   </div>
                 
               
@@ -324,7 +264,7 @@ if (!doNotTrack) {
           
             <li class="post-action">
               
-                <a class="post-action-btn btn btn--disabled">
+                <a class="post-action-btn btn btn--default tooltip--top" href="https://johanburati.github.io/2021/06/azure-linux-image-kernel-2021-06-01/" data-tooltip="Azure Linux Image Kernel 2021-06-01">
               
                   <i class="fa fa-angle-left"></i>
                   <span class="hide-xs hide-sm text-small icon-ml">NEXT</span>
@@ -332,7 +272,7 @@ if (!doNotTrack) {
             </li>
             <li class="post-action">
               
-                <a class="post-action-btn btn btn--default tooltip--top" href="https://johanburati.github.io/2021/05/disable-floppy-driver-on-rhel/" data-tooltip="Disable floppy driver on RHEL">
+                <a class="post-action-btn btn btn--default tooltip--top" href="https://johanburati.github.io/2021/04/install-azure-powershell-on-linux/" data-tooltip="Install Azure Powershell on Linux">
               
                   <span class="hide-xs hide-sm text-small icon-mr">PREVIOUS</span>
                   <i class="fa fa-angle-right"></i>
@@ -392,7 +332,7 @@ if (!doNotTrack) {
           
             <li class="post-action">
               
-                <a class="post-action-btn btn btn--disabled">
+                <a class="post-action-btn btn btn--default tooltip--top" href="https://johanburati.github.io/2021/06/azure-linux-image-kernel-2021-06-01/" data-tooltip="Azure Linux Image Kernel 2021-06-01">
               
                   <i class="fa fa-angle-left"></i>
                   <span class="hide-xs hide-sm text-small icon-ml">NEXT</span>
@@ -400,7 +340,7 @@ if (!doNotTrack) {
             </li>
             <li class="post-action">
               
-                <a class="post-action-btn btn btn--default tooltip--top" href="https://johanburati.github.io/2021/05/disable-floppy-driver-on-rhel/" data-tooltip="Disable floppy driver on RHEL">
+                <a class="post-action-btn btn btn--default tooltip--top" href="https://johanburati.github.io/2021/04/install-azure-powershell-on-linux/" data-tooltip="Install Azure Powershell on Linux">
               
                   <span class="hide-xs hide-sm text-small icon-mr">PREVIOUS</span>
                   <i class="fa fa-angle-right"></i>
@@ -504,9 +444,9 @@ function updateMinWidth() {
     
       <script>
         var disqus_config = function () {
-          this.page.url = 'https:\/\/johanburati.github.io\/2021\/06\/azure-linux-image-kernel-2021-06-01\/';
+          this.page.url = 'https:\/\/johanburati.github.io\/2021\/05\/disable-floppy-driver-on-rhel\/';
           
-            this.page.identifier = '\/2021\/06\/azure-linux-image-kernel-2021-06-01\/'
+            this.page.identifier = '\/2021\/05\/disable-floppy-driver-on-rhel\/'
           
         };
         (function() {
