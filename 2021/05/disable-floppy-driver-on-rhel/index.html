@@ -234,7 +234,7 @@ if (!doNotTrack) {
 <pre><code>echo &quot;blacklist floppy&quot; | sudo tee /etc/modprobe.d/blacklist-floppy.conf
 </code></pre><p>Remove the driver and rebuild <em>initramfs</em>:</p>
 <pre><code>sudo rmmod floppy
-dracut -f -v
+sudo dracut -f -v
 </code></pre><p>After rebooting the VM you should not see that error message anymore.</p>
               
             </div>
