@@ -6,7 +6,25 @@
     <description>Recent content in Posts on johanburati&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 01 Jun 2021 17:11:12 +0900</lastBuildDate><atom:link href="https://johanburati.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 01 Jul 2021 14:43:24 +0900</lastBuildDate><atom:link href="https://johanburati.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Azure Linux Image Kernel 2021-07-01</title>
+      <link>https://johanburati.github.io/2021/07/azure-linux-image-kernel-2021-07-01/</link>
+      <pubDate>Thu, 01 Jul 2021 14:43:24 +0900</pubDate>
+      
+      <guid>https://johanburati.github.io/2021/07/azure-linux-image-kernel-2021-07-01/</guid>
+      <description>&lt;p&gt;List of lastest major distro images SKUs and their kernel version as of Jul 01, 2021.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>How to install python3 on RHEL</title>
+      <link>https://johanburati.github.io/2021/06/how-to-install-python3-on-rhel/</link>
+      <pubDate>Tue, 15 Jun 2021 10:00:00 +0900</pubDate>
+      
+      <guid>https://johanburati.github.io/2021/06/how-to-install-python3-on-rhel/</guid>
+      <description>&lt;p&gt;How to install &lt;strong&gt;python3&lt;/strong&gt; on &lt;strong&gt;RHEL7&lt;/strong&gt; and &lt;strong&gt;RHEL8&lt;/strong&gt; Azure Images.&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>Azure Linux Image Kernel 2021-06-01</title>
       <link>https://johanburati.github.io/2021/06/azure-linux-image-kernel-2021-06-01/</link>

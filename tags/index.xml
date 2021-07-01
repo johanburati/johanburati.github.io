@@ -6,11 +6,11 @@
     <description>Recent content in Tags on johanburati&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 01 Jun 2021 17:11:12 +0900</lastBuildDate><atom:link href="https://johanburati.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 01 Jul 2021 14:43:24 +0900</lastBuildDate><atom:link href="https://johanburati.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>azure</title>
       <link>https://johanburati.github.io/tags/azure/</link>
-      <pubDate>Tue, 01 Jun 2021 17:11:12 +0900</pubDate>
+      <pubDate>Thu, 01 Jul 2021 14:43:24 +0900</pubDate>
       
       <guid>https://johanburati.github.io/tags/azure/</guid>
       <description></description>
@@ -19,9 +19,27 @@
     <item>
       <title>linux</title>
       <link>https://johanburati.github.io/tags/linux/</link>
-      <pubDate>Tue, 01 Jun 2021 17:11:12 +0900</pubDate>
+      <pubDate>Thu, 01 Jul 2021 14:43:24 +0900</pubDate>
       
       <guid>https://johanburati.github.io/tags/linux/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>python</title>
+      <link>https://johanburati.github.io/tags/python/</link>
+      <pubDate>Tue, 15 Jun 2021 10:00:00 +0900</pubDate>
+      
+      <guid>https://johanburati.github.io/tags/python/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>rhel</title>
+      <link>https://johanburati.github.io/tags/rhel/</link>
+      <pubDate>Tue, 15 Jun 2021 10:00:00 +0900</pubDate>
+      
+      <guid>https://johanburati.github.io/tags/rhel/</guid>
       <description></description>
     </item>
     
